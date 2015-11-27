@@ -1,0 +1,3394 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "ename": "IndentationError",
+     "evalue": "unexpected indent (<ipython-input-1-ccbb05d518b6>, line 4)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-1-ccbb05d518b6>\"\u001b[1;36m, line \u001b[1;32m4\u001b[0m\n\u001b[1;33m    text3\u001b[0m\n\u001b[1;37m    ^\u001b[0m\n\u001b[1;31mIndentationError\u001b[0m\u001b[1;31m:\u001b[0m unexpected indent\n"
+     ]
+    }
+   ],
+   "source": [
+    "import nltk\n",
+    "\n",
+    "from nltk.book import *\n",
+    " text3\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "import nltk"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[nltk_data] Downloading collection u'all'\n",
+      "[nltk_data]    | \n",
+      "[nltk_data]    | Downloading package abc to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/abc.zip.\n",
+      "[nltk_data]    | Downloading package alpino to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/alpino.zip.\n",
+      "[nltk_data]    | Downloading package biocreative_ppi to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/biocreative_ppi.zip.\n",
+      "[nltk_data]    | Downloading package brown to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/brown.zip.\n",
+      "[nltk_data]    | Downloading package brown_tei to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/brown_tei.zip.\n",
+      "[nltk_data]    | Downloading package cess_cat to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/cess_cat.zip.\n",
+      "[nltk_data]    | Downloading package cess_esp to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/cess_esp.zip.\n",
+      "[nltk_data]    | Downloading package chat80 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/chat80.zip.\n",
+      "[nltk_data]    | Downloading package city_database to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/city_database.zip.\n",
+      "[nltk_data]    | Downloading package cmudict to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/cmudict.zip.\n",
+      "[nltk_data]    | Downloading package comparative_sentences to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/comparative_sentences.zip.\n",
+      "[nltk_data]    | Downloading package comtrans to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package conll2000 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/conll2000.zip.\n",
+      "[nltk_data]    | Downloading package conll2002 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/conll2002.zip.\n",
+      "[nltk_data]    | Downloading package conll2007 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package crubadan to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/crubadan.zip.\n",
+      "[nltk_data]    | Downloading package dependency_treebank to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/dependency_treebank.zip.\n",
+      "[nltk_data]    | Downloading package europarl_raw to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/europarl_raw.zip.\n",
+      "[nltk_data]    | Downloading package floresta to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/floresta.zip.\n",
+      "[nltk_data]    | Downloading package framenet_v15 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/framenet_v15.zip.\n",
+      "[nltk_data]    | Downloading package gazetteers to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/gazetteers.zip.\n",
+      "[nltk_data]    | Downloading package genesis to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/genesis.zip.\n",
+      "[nltk_data]    | Downloading package gutenberg to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/gutenberg.zip.\n",
+      "[nltk_data]    | Downloading package ieer to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/ieer.zip.\n",
+      "[nltk_data]    | Downloading package inaugural to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/inaugural.zip.\n",
+      "[nltk_data]    | Downloading package indian to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/indian.zip.\n",
+      "[nltk_data]    | Downloading package jeita to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package kimmo to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/kimmo.zip.\n",
+      "[nltk_data]    | Downloading package knbc to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package lin_thesaurus to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/lin_thesaurus.zip.\n",
+      "[nltk_data]    | Downloading package mac_morpho to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/mac_morpho.zip.\n",
+      "[nltk_data]    | Downloading package machado to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package masc_tagged to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package moses_sample to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping models/moses_sample.zip.\n",
+      "[nltk_data]    | Downloading package movie_reviews to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/movie_reviews.zip.\n",
+      "[nltk_data]    | Downloading package names to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/names.zip.\n",
+      "[nltk_data]    | Downloading package nombank.1.0 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package nps_chat to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/nps_chat.zip.\n",
+      "[nltk_data]    | Downloading package oanc_masc to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package omw to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/omw.zip.\n",
+      "[nltk_data]    | Downloading package opinion_lexicon to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/opinion_lexicon.zip.\n",
+      "[nltk_data]    | Downloading package paradigms to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/paradigms.zip.\n",
+      "[nltk_data]    | Downloading package pil to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/pil.zip.\n",
+      "[nltk_data]    | Downloading package pl196x to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/pl196x.zip.\n",
+      "[nltk_data]    | Downloading package ppattach to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/ppattach.zip.\n",
+      "[nltk_data]    | Downloading package problem_reports to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/problem_reports.zip.\n",
+      "[nltk_data]    | Downloading package propbank to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package ptb to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/ptb.zip.\n",
+      "[nltk_data]    | Downloading package oanc_masc to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Package oanc_masc is already up-to-date!\n",
+      "[nltk_data]    | Downloading package product_reviews_1 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/product_reviews_1.zip.\n",
+      "[nltk_data]    | Downloading package product_reviews_2 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/product_reviews_2.zip.\n",
+      "[nltk_data]    | Downloading package pros_cons to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/pros_cons.zip.\n",
+      "[nltk_data]    | Downloading package qc to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/qc.zip.\n",
+      "[nltk_data]    | Downloading package reuters to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package rte to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/rte.zip.\n",
+      "[nltk_data]    | Downloading package semcor to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package senseval to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/senseval.zip.\n",
+      "[nltk_data]    | Downloading package sentiwordnet to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/sentiwordnet.zip.\n",
+      "[nltk_data]    | Downloading package sentence_polarity to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/sentence_polarity.zip.\n",
+      "[nltk_data]    | Downloading package shakespeare to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/shakespeare.zip.\n",
+      "[nltk_data]    | Downloading package sinica_treebank to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/sinica_treebank.zip.\n",
+      "[nltk_data]    | Downloading package smultron to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/smultron.zip.\n",
+      "[nltk_data]    | Downloading package state_union to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/state_union.zip.\n",
+      "[nltk_data]    | Downloading package stopwords to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/stopwords.zip.\n",
+      "[nltk_data]    | Downloading package subjectivity to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/subjectivity.zip.\n",
+      "[nltk_data]    | Downloading package swadesh to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/swadesh.zip.\n",
+      "[nltk_data]    | Downloading package switchboard to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/switchboard.zip.\n",
+      "[nltk_data]    | Downloading package timit to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/timit.zip.\n",
+      "[nltk_data]    | Downloading package toolbox to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/toolbox.zip.\n",
+      "[nltk_data]    | Downloading package treebank to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/treebank.zip.\n",
+      "[nltk_data]    | Downloading package twitter_samples to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/twitter_samples.zip.\n",
+      "[nltk_data]    | Downloading package udhr to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/udhr.zip.\n",
+      "[nltk_data]    | Downloading package udhr2 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/udhr2.zip.\n",
+      "[nltk_data]    | Downloading package unicode_samples to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/unicode_samples.zip.\n",
+      "[nltk_data]    | Downloading package universal_treebanks_v20 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package verbnet to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/verbnet.zip.\n",
+      "[nltk_data]    | Downloading package webtext to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/webtext.zip.\n",
+      "[nltk_data]    | Downloading package wordnet to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/wordnet.zip.\n",
+      "[nltk_data]    | Downloading package wordnet_ic to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/wordnet_ic.zip.\n",
+      "[nltk_data]    | Downloading package words to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/words.zip.\n",
+      "[nltk_data]    | Downloading package ycoe to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/ycoe.zip.\n",
+      "[nltk_data]    | Downloading package rslp to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping stemmers/rslp.zip.\n",
+      "[nltk_data]    | Downloading package hmm_treebank_pos_tagger to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping taggers/hmm_treebank_pos_tagger.zip.\n",
+      "[nltk_data]    | Downloading package maxent_treebank_pos_tagger to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping taggers/maxent_treebank_pos_tagger.zip.\n",
+      "[nltk_data]    | Downloading package universal_tagset to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping taggers/universal_tagset.zip.\n",
+      "[nltk_data]    | Downloading package maxent_ne_chunker to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping chunkers/maxent_ne_chunker.zip.\n",
+      "[nltk_data]    | Downloading package punkt to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping tokenizers/punkt.zip.\n",
+      "[nltk_data]    | Downloading package book_grammars to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping grammars/book_grammars.zip.\n",
+      "[nltk_data]    | Downloading package sample_grammars to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping grammars/sample_grammars.zip.\n",
+      "[nltk_data]    | Downloading package spanish_grammars to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping grammars/spanish_grammars.zip.\n",
+      "[nltk_data]    | Downloading package basque_grammars to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping grammars/basque_grammars.zip.\n",
+      "[nltk_data]    | Downloading package large_grammars to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping grammars/large_grammars.zip.\n",
+      "[nltk_data]    | Downloading package tagsets to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping help/tagsets.zip.\n",
+      "[nltk_data]    | Downloading package snowball_data to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package bllip_wsj_no_aux to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping models/bllip_wsj_no_aux.zip.\n",
+      "[nltk_data]    | Downloading package word2vec_sample to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping models/word2vec_sample.zip.\n",
+      "[nltk_data]    | Downloading package panlex_swadesh to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package mte_teip5 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/mte_teip5.zip.\n",
+      "[nltk_data]    | Downloading package averaged_perceptron_tagger to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping taggers/averaged_perceptron_tagger.zip.\n",
+      "[nltk_data]    | \n",
+      "[nltk_data]  Done downloading collection all\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "nltk.download ('all')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[nltk_data] Downloading collection u'all'\n",
+      "[nltk_data]    | \n",
+      "[nltk_data]    | Downloading package abc to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/abc.zip.\n",
+      "[nltk_data]    | Downloading package alpino to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/alpino.zip.\n",
+      "[nltk_data]    | Downloading package biocreative_ppi to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/biocreative_ppi.zip.\n",
+      "[nltk_data]    | Downloading package brown to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/brown.zip.\n",
+      "[nltk_data]    | Downloading package brown_tei to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/brown_tei.zip.\n",
+      "[nltk_data]    | Downloading package cess_cat to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/cess_cat.zip.\n",
+      "[nltk_data]    | Downloading package cess_esp to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/cess_esp.zip.\n",
+      "[nltk_data]    | Downloading package chat80 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/chat80.zip.\n",
+      "[nltk_data]    | Downloading package city_database to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/city_database.zip.\n",
+      "[nltk_data]    | Downloading package cmudict to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/cmudict.zip.\n",
+      "[nltk_data]    | Downloading package comparative_sentences to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/comparative_sentences.zip.\n",
+      "[nltk_data]    | Downloading package comtrans to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package conll2000 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/conll2000.zip.\n",
+      "[nltk_data]    | Downloading package conll2002 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/conll2002.zip.\n",
+      "[nltk_data]    | Downloading package conll2007 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package crubadan to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/crubadan.zip.\n",
+      "[nltk_data]    | Downloading package dependency_treebank to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/dependency_treebank.zip.\n",
+      "[nltk_data]    | Downloading package europarl_raw to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/europarl_raw.zip.\n",
+      "[nltk_data]    | Downloading package floresta to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/floresta.zip.\n",
+      "[nltk_data]    | Downloading package framenet_v15 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/framenet_v15.zip.\n",
+      "[nltk_data]    | Downloading package gazetteers to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/gazetteers.zip.\n",
+      "[nltk_data]    | Downloading package genesis to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/genesis.zip.\n",
+      "[nltk_data]    | Downloading package gutenberg to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/gutenberg.zip.\n",
+      "[nltk_data]    | Downloading package ieer to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/ieer.zip.\n",
+      "[nltk_data]    | Downloading package inaugural to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/inaugural.zip.\n",
+      "[nltk_data]    | Downloading package indian to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/indian.zip.\n",
+      "[nltk_data]    | Downloading package jeita to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package kimmo to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/kimmo.zip.\n",
+      "[nltk_data]    | Downloading package knbc to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package lin_thesaurus to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/lin_thesaurus.zip.\n",
+      "[nltk_data]    | Downloading package mac_morpho to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/mac_morpho.zip.\n",
+      "[nltk_data]    | Downloading package machado to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package masc_tagged to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package moses_sample to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping models/moses_sample.zip.\n",
+      "[nltk_data]    | Downloading package movie_reviews to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/movie_reviews.zip.\n",
+      "[nltk_data]    | Downloading package names to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/names.zip.\n",
+      "[nltk_data]    | Downloading package nombank.1.0 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package nps_chat to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/nps_chat.zip.\n",
+      "[nltk_data]    | Downloading package oanc_masc to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package omw to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/omw.zip.\n",
+      "[nltk_data]    | Downloading package opinion_lexicon to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/opinion_lexicon.zip.\n",
+      "[nltk_data]    | Downloading package paradigms to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/paradigms.zip.\n",
+      "[nltk_data]    | Downloading package pil to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/pil.zip.\n",
+      "[nltk_data]    | Downloading package pl196x to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/pl196x.zip.\n",
+      "[nltk_data]    | Downloading package ppattach to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/ppattach.zip.\n",
+      "[nltk_data]    | Downloading package problem_reports to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/problem_reports.zip.\n",
+      "[nltk_data]    | Downloading package propbank to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package ptb to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/ptb.zip.\n",
+      "[nltk_data]    | Downloading package oanc_masc to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Package oanc_masc is already up-to-date!\n",
+      "[nltk_data]    | Downloading package product_reviews_1 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/product_reviews_1.zip.\n",
+      "[nltk_data]    | Downloading package product_reviews_2 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/product_reviews_2.zip.\n",
+      "[nltk_data]    | Downloading package pros_cons to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/pros_cons.zip.\n",
+      "[nltk_data]    | Downloading package qc to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/qc.zip.\n",
+      "[nltk_data]    | Downloading package reuters to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package rte to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/rte.zip.\n",
+      "[nltk_data]    | Downloading package semcor to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package senseval to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/senseval.zip.\n",
+      "[nltk_data]    | Downloading package sentiwordnet to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/sentiwordnet.zip.\n",
+      "[nltk_data]    | Downloading package sentence_polarity to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/sentence_polarity.zip.\n",
+      "[nltk_data]    | Downloading package shakespeare to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/shakespeare.zip.\n",
+      "[nltk_data]    | Downloading package sinica_treebank to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/sinica_treebank.zip.\n",
+      "[nltk_data]    | Downloading package smultron to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/smultron.zip.\n",
+      "[nltk_data]    | Downloading package state_union to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/state_union.zip.\n",
+      "[nltk_data]    | Downloading package stopwords to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/stopwords.zip.\n",
+      "[nltk_data]    | Downloading package subjectivity to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/subjectivity.zip.\n",
+      "[nltk_data]    | Downloading package swadesh to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/swadesh.zip.\n",
+      "[nltk_data]    | Downloading package switchboard to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/switchboard.zip.\n",
+      "[nltk_data]    | Downloading package timit to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/timit.zip.\n",
+      "[nltk_data]    | Downloading package toolbox to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/toolbox.zip.\n",
+      "[nltk_data]    | Downloading package treebank to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/treebank.zip.\n",
+      "[nltk_data]    | Downloading package twitter_samples to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/twitter_samples.zip.\n",
+      "[nltk_data]    | Downloading package udhr to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/udhr.zip.\n",
+      "[nltk_data]    | Downloading package udhr2 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/udhr2.zip.\n",
+      "[nltk_data]    | Downloading package unicode_samples to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/unicode_samples.zip.\n",
+      "[nltk_data]    | Downloading package universal_treebanks_v20 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package verbnet to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/verbnet.zip.\n",
+      "[nltk_data]    | Downloading package webtext to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/webtext.zip.\n",
+      "[nltk_data]    | Downloading package wordnet to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/wordnet.zip.\n",
+      "[nltk_data]    | Downloading package wordnet_ic to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/wordnet_ic.zip.\n",
+      "[nltk_data]    | Downloading package words to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/words.zip.\n",
+      "[nltk_data]    | Downloading package ycoe to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/ycoe.zip.\n",
+      "[nltk_data]    | Downloading package rslp to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping stemmers/rslp.zip.\n",
+      "[nltk_data]    | Downloading package hmm_treebank_pos_tagger to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping taggers/hmm_treebank_pos_tagger.zip.\n",
+      "[nltk_data]    | Downloading package maxent_treebank_pos_tagger to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping taggers/maxent_treebank_pos_tagger.zip.\n",
+      "[nltk_data]    | Downloading package universal_tagset to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping taggers/universal_tagset.zip.\n",
+      "[nltk_data]    | Downloading package maxent_ne_chunker to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping chunkers/maxent_ne_chunker.zip.\n",
+      "[nltk_data]    | Downloading package punkt to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping tokenizers/punkt.zip.\n",
+      "[nltk_data]    | Downloading package book_grammars to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping grammars/book_grammars.zip.\n",
+      "[nltk_data]    | Downloading package sample_grammars to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping grammars/sample_grammars.zip.\n",
+      "[nltk_data]    | Downloading package spanish_grammars to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping grammars/spanish_grammars.zip.\n",
+      "[nltk_data]    | Downloading package basque_grammars to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping grammars/basque_grammars.zip.\n",
+      "[nltk_data]    | Downloading package large_grammars to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping grammars/large_grammars.zip.\n",
+      "[nltk_data]    | Downloading package tagsets to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping help/tagsets.zip.\n",
+      "[nltk_data]    | Downloading package snowball_data to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package bllip_wsj_no_aux to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping models/bllip_wsj_no_aux.zip.\n",
+      "[nltk_data]    | Downloading package word2vec_sample to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping models/word2vec_sample.zip.\n",
+      "[nltk_data]    | Downloading package panlex_swadesh to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    | Downloading package mte_teip5 to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping corpora/mte_teip5.zip.\n",
+      "[nltk_data]    | Downloading package averaged_perceptron_tagger to\n",
+      "[nltk_data]    |     /home/researcher/nltk_data...\n",
+      "[nltk_data]    |   Unzipping taggers/averaged_perceptron_tagger.zip.\n",
+      "[nltk_data]    | \n",
+      "[nltk_data]  Done downloading collection all\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "nltk.download ('all')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "from nltk.book import *"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<Text: Sense and Sensibility by Jane Austen 1811>"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "text2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "141576"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(text2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {
+    "collapsed": false,
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{u'succour',\n",
+       " u'four',\n",
+       " u'woods',\n",
+       " u'hanging',\n",
+       " u'woody',\n",
+       " u'conjure',\n",
+       " u'looking',\n",
+       " u'eligible',\n",
+       " u'scold',\n",
+       " u'unsuitableness',\n",
+       " u'meadows',\n",
+       " u'stipulate',\n",
+       " u'leisurely',\n",
+       " u'bringing',\n",
+       " u'disturb',\n",
+       " u'internally',\n",
+       " u'hostess',\n",
+       " u'mohrs',\n",
+       " u'persisted',\n",
+       " u'Does',\n",
+       " u'succession',\n",
+       " u'tired',\n",
+       " u'cordially',\n",
+       " u'pulse',\n",
+       " u'elegant',\n",
+       " u'second',\n",
+       " u'sooth',\n",
+       " u'shrugging',\n",
+       " u'abundantly',\n",
+       " u'errors',\n",
+       " u'forgetting',\n",
+       " u'contributed',\n",
+       " u'fingers',\n",
+       " u'increasing',\n",
+       " u'exclamations',\n",
+       " u'hero',\n",
+       " u'leaning',\n",
+       " u'Truth',\n",
+       " u'here',\n",
+       " u'china',\n",
+       " u'hers',\n",
+       " u'natured',\n",
+       " u'substance',\n",
+       " u'unwillingness',\n",
+       " u'pretensions',\n",
+       " u'reports',\n",
+       " u'NOT',\n",
+       " u'NOW',\n",
+       " u'projection',\n",
+       " u'sweetest',\n",
+       " u'explained',\n",
+       " u'Three',\n",
+       " u'summons',\n",
+       " u'brought',\n",
+       " u'forbore',\n",
+       " u'cherishing',\n",
+       " u'spoke',\n",
+       " u'impartiality',\n",
+       " u'music',\n",
+       " u'therefore',\n",
+       " u'strike',\n",
+       " u'females',\n",
+       " u'successful',\n",
+       " u'brings',\n",
+       " u'hurt',\n",
+       " u'glass',\n",
+       " u'midst',\n",
+       " u'hold',\n",
+       " u'irksome',\n",
+       " u'pursue',\n",
+       " u'accomplishment',\n",
+       " u'example',\n",
+       " u'expressively',\n",
+       " u'La',\n",
+       " u'unjust',\n",
+       " u'household',\n",
+       " u'caution',\n",
+       " u'want',\n",
+       " u'absolute',\n",
+       " u'complaining',\n",
+       " u'travel',\n",
+       " u'significancy',\n",
+       " u'feature',\n",
+       " u'embellishments',\n",
+       " u'how',\n",
+       " u'hot',\n",
+       " u'hesitatingly',\n",
+       " u'hop',\n",
+       " u'disgrace',\n",
+       " u'preferable',\n",
+       " u'dignified',\n",
+       " u'A',\n",
+       " u'abstraction',\n",
+       " u'beauty',\n",
+       " u'wrong',\n",
+       " u'OWN',\n",
+       " u'entrusted',\n",
+       " u'endeavoured',\n",
+       " u'Another',\n",
+       " u'keeps',\n",
+       " u'nonsensical',\n",
+       " u'wind',\n",
+       " u'wine',\n",
+       " u'restriction',\n",
+       " u'unexhilarating',\n",
+       " u'welcomed',\n",
+       " u'unworthiness',\n",
+       " u'concurrence',\n",
+       " u'enquiring',\n",
+       " u'rewarded',\n",
+       " u'wrought',\n",
+       " u'fir',\n",
+       " u'His',\n",
+       " u'fit',\n",
+       " u'unforeseen',\n",
+       " u'recognised',\n",
+       " u'fix',\n",
+       " u'striking',\n",
+       " u'auditors',\n",
+       " u'distinguishing',\n",
+       " u'endeavoring',\n",
+       " u'admirable',\n",
+       " u'easier',\n",
+       " u'grievous',\n",
+       " u'enrich',\n",
+       " u'wooded',\n",
+       " u'effects',\n",
+       " u'interrupt',\n",
+       " u'beaux',\n",
+       " u'yourself',\n",
+       " u'rumour',\n",
+       " u'blushes',\n",
+       " u'ankle',\n",
+       " u'uninfluenced',\n",
+       " u'interfering',\n",
+       " u'blushed',\n",
+       " u'preceded',\n",
+       " u'series',\n",
+       " u'Eliza',\n",
+       " u'fortnight',\n",
+       " u'message',\n",
+       " u'whip',\n",
+       " u'borne',\n",
+       " u'toleration',\n",
+       " u'misfortune',\n",
+       " u'drove',\n",
+       " u'literature',\n",
+       " u'diction',\n",
+       " u'excepting',\n",
+       " u're',\n",
+       " u'encourage',\n",
+       " u'mend',\n",
+       " u'Vanity',\n",
+       " u'foundation',\n",
+       " u'assured',\n",
+       " u'threatened',\n",
+       " u'sheet',\n",
+       " u'estimate',\n",
+       " u'universally',\n",
+       " u'ate',\n",
+       " u'unstudied',\n",
+       " u'disturbed',\n",
+       " u'speedy',\n",
+       " u'tempting',\n",
+       " u'ardour',\n",
+       " u'breed',\n",
+       " u'Please',\n",
+       " u'clamorous',\n",
+       " u'service',\n",
+       " u'engagement',\n",
+       " u'needed',\n",
+       " u'blossoms',\n",
+       " u'bitter',\n",
+       " u'ranging',\n",
+       " u'listen',\n",
+       " u'wisdom',\n",
+       " u'!\"--',\n",
+       " u'positively',\n",
+       " u'exultation',\n",
+       " u'showed',\n",
+       " u'tree',\n",
+       " u'project',\n",
+       " u'idle',\n",
+       " u'exclaimed',\n",
+       " u'endure',\n",
+       " u'feeling',\n",
+       " u'acquisition',\n",
+       " u'willingness',\n",
+       " u'Williams',\n",
+       " u'Then',\n",
+       " u'person',\n",
+       " u'uncouth',\n",
+       " u'haste',\n",
+       " u'eagerly',\n",
+       " u'recommended',\n",
+       " u'amusing',\n",
+       " u'They',\n",
+       " u'imprudent',\n",
+       " u'shall',\n",
+       " u'object',\n",
+       " u'mouth',\n",
+       " u'letter',\n",
+       " u'morality',\n",
+       " u'Mansion',\n",
+       " u'came',\n",
+       " u'saying',\n",
+       " u'departing',\n",
+       " u'meetings',\n",
+       " u'loitered',\n",
+       " u'tempted',\n",
+       " u'busy',\n",
+       " u'Extend',\n",
+       " u'shuffling',\n",
+       " u'cousins',\n",
+       " u'theme',\n",
+       " u'bliss',\n",
+       " u'touched',\n",
+       " u'rich',\n",
+       " u'heartily',\n",
+       " u'plate',\n",
+       " u'stammered',\n",
+       " u'pocket',\n",
+       " u'altogether',\n",
+       " u'relish',\n",
+       " u'esteeming',\n",
+       " u'inducement',\n",
+       " u'release',\n",
+       " u'fair',\n",
+       " u'expediency',\n",
+       " u'unexpectedly',\n",
+       " u'result',\n",
+       " u'fail',\n",
+       " u'John',\n",
+       " u'best',\n",
+       " u'playfulness',\n",
+       " u'rings',\n",
+       " u'solicitude',\n",
+       " u'score',\n",
+       " u'scorn',\n",
+       " u'unobtrusiveness',\n",
+       " u'counsel',\n",
+       " u'preserve',\n",
+       " u'men',\n",
+       " u'nature',\n",
+       " u'extent',\n",
+       " u'debt',\n",
+       " u'pity',\n",
+       " u'accident',\n",
+       " u'sacrificing',\n",
+       " u'refinement',\n",
+       " u'country',\n",
+       " u'demanded',\n",
+       " u'marrying',\n",
+       " u'argue',\n",
+       " u'adapted',\n",
+       " u'asked',\n",
+       " u'pre',\n",
+       " u'mortified',\n",
+       " u'vain',\n",
+       " u'Willing',\n",
+       " u'Comparisons',\n",
+       " u'Somersetshire',\n",
+       " u'Amongst',\n",
+       " u'.',\n",
+       " u'much',\n",
+       " u'privilege',\n",
+       " u'tallest',\n",
+       " u'exactness',\n",
+       " u'life',\n",
+       " u'confinement',\n",
+       " u'incommode',\n",
+       " u'child',\n",
+       " u'worked',\n",
+       " u'diverted',\n",
+       " u'employ',\n",
+       " u'?--\"',\n",
+       " u'remembering',\n",
+       " u'foreplanned',\n",
+       " u'played',\n",
+       " u'conditioned',\n",
+       " u'eighteen',\n",
+       " u'anticipating',\n",
+       " u'trusted',\n",
+       " u'Valley',\n",
+       " u'severity',\n",
+       " u'things',\n",
+       " u'Oh',\n",
+       " u'dryness',\n",
+       " u'harmony',\n",
+       " u'exertion',\n",
+       " u'fairly',\n",
+       " u'boiled',\n",
+       " u'qualifications',\n",
+       " u'supper',\n",
+       " u'confusedly',\n",
+       " u'intrusion',\n",
+       " u'matters',\n",
+       " u'redeem',\n",
+       " u'echoed',\n",
+       " u'coldness',\n",
+       " u'opinions',\n",
+       " u'outlived',\n",
+       " u'Thank',\n",
+       " u'THAT',\n",
+       " u'misconstruction',\n",
+       " u'beset',\n",
+       " u'exclaiming',\n",
+       " u'rushing',\n",
+       " u'succeeding',\n",
+       " u'Happy',\n",
+       " u'ham',\n",
+       " u'ease',\n",
+       " u'had',\n",
+       " u'advancement',\n",
+       " u'obedient',\n",
+       " u'innocent',\n",
+       " u'has',\n",
+       " u'hat',\n",
+       " u'disagreement',\n",
+       " u'possible',\n",
+       " u'civilities',\n",
+       " u'possibly',\n",
+       " u'chuse',\n",
+       " u'birth',\n",
+       " u'replace',\n",
+       " u'desire',\n",
+       " u'remind',\n",
+       " u'misled',\n",
+       " u'steps',\n",
+       " u'effusion',\n",
+       " u'beneficial',\n",
+       " u'right',\n",
+       " u'old',\n",
+       " u'crowd',\n",
+       " u'people',\n",
+       " u'honeysuckles',\n",
+       " u'Between',\n",
+       " u'for',\n",
+       " u'bottom',\n",
+       " u'fox',\n",
+       " u'witty',\n",
+       " u'landscape',\n",
+       " u'summoned',\n",
+       " u'?\"--',\n",
+       " u'losing',\n",
+       " u'memorable',\n",
+       " u'bowing',\n",
+       " u'Think',\n",
+       " u'shaken',\n",
+       " u'insinuations',\n",
+       " u'o',\n",
+       " u'despair',\n",
+       " u'slightly',\n",
+       " u'Use',\n",
+       " u'nought',\n",
+       " u'Scotland',\n",
+       " u'respectably',\n",
+       " u'son',\n",
+       " u'administer',\n",
+       " u'respectable',\n",
+       " u'beings',\n",
+       " u'raises',\n",
+       " u'despised',\n",
+       " u']',\n",
+       " u'support',\n",
+       " u'constantly',\n",
+       " u'tame',\n",
+       " u'avail',\n",
+       " u'greatness',\n",
+       " u'happy',\n",
+       " u'waistcoat',\n",
+       " u'offer',\n",
+       " u'forming',\n",
+       " u'denoting',\n",
+       " u'talents',\n",
+       " u'safeguard',\n",
+       " u'congratulations',\n",
+       " u'humbled',\n",
+       " u'extremity',\n",
+       " u'nicest',\n",
+       " u'mighty',\n",
+       " u'Sir',\n",
+       " u'juvenile',\n",
+       " u'later',\n",
+       " u'liberal',\n",
+       " u'Sit',\n",
+       " u'disclosing',\n",
+       " u'restorative',\n",
+       " u'soothe',\n",
+       " u'exist',\n",
+       " u\"',\",\n",
+       " u'acacia',\n",
+       " u'unlover',\n",
+       " u'effusions',\n",
+       " u'protested',\n",
+       " u'solicitation',\n",
+       " u'dotted',\n",
+       " u'floor',\n",
+       " u'ROBERT',\n",
+       " u'circumstanced',\n",
+       " u'guineas',\n",
+       " u'irresistible',\n",
+       " u'intend',\n",
+       " u'acquaintance',\n",
+       " u'intent',\n",
+       " u'rolling',\n",
+       " u'Gardens',\n",
+       " u'beamed',\n",
+       " u'time',\n",
+       " u'gown',\n",
+       " u'whoever',\n",
+       " u'doted',\n",
+       " u'chair',\n",
+       " u'rousing',\n",
+       " u'indolent',\n",
+       " u'vex',\n",
+       " u'recurrence',\n",
+       " u'Believe',\n",
+       " u'fatigues',\n",
+       " u'choice',\n",
+       " u'gloomy',\n",
+       " u'rapturous',\n",
+       " u'fatigued',\n",
+       " u'fullest',\n",
+       " u'exact',\n",
+       " u'minute',\n",
+       " u'leave',\n",
+       " u'settle',\n",
+       " u'speculation',\n",
+       " u'prevent',\n",
+       " u'occurrence',\n",
+       " u'sigh',\n",
+       " u'Avignon',\n",
+       " u'sign',\n",
+       " u'lengthened',\n",
+       " u'celebrated',\n",
+       " u'Magna',\n",
+       " u'falling',\n",
+       " u'Me',\n",
+       " u'Ma',\n",
+       " u'honour',\n",
+       " u'funeral',\n",
+       " u'understanding',\n",
+       " u'yards',\n",
+       " u'Mr',\n",
+       " u'alone',\n",
+       " u'along',\n",
+       " u'My',\n",
+       " u'ME',\n",
+       " u'brilliant',\n",
+       " u'coxcomb',\n",
+       " u'studied',\n",
+       " u'wherever',\n",
+       " u'commonly',\n",
+       " u'Born',\n",
+       " u'accomplished',\n",
+       " u'Frosts',\n",
+       " u'MY',\n",
+       " u'reclaim',\n",
+       " u'ESTEEM',\n",
+       " u'love',\n",
+       " u'prefer',\n",
+       " u'obstinacy',\n",
+       " u'humouring',\n",
+       " u'betraying',\n",
+       " u'undergone',\n",
+       " u'working',\n",
+       " u'positive',\n",
+       " u'angry',\n",
+       " u'wicket',\n",
+       " u'sisterly',\n",
+       " u'cherished',\n",
+       " u'opposed',\n",
+       " u'Michaelmas',\n",
+       " u'resuscitation',\n",
+       " u'Those',\n",
+       " u'loving',\n",
+       " u'introducing',\n",
+       " u'consoled',\n",
+       " u'afford',\n",
+       " u'assent',\n",
+       " u'apparent',\n",
+       " u'refrain',\n",
+       " u'odious',\n",
+       " u'militated',\n",
+       " u'ignorant',\n",
+       " u'virtue',\n",
+       " u'easiest',\n",
+       " u'valued',\n",
+       " u'anything',\n",
+       " u'Pope',\n",
+       " u'dreaded',\n",
+       " u'pretend',\n",
+       " u'Midsummer',\n",
+       " u'believes',\n",
+       " u'believed',\n",
+       " u'Our',\n",
+       " u'indolence',\n",
+       " u'admired',\n",
+       " u'admires',\n",
+       " u'allowed',\n",
+       " u'stole',\n",
+       " u'evidently',\n",
+       " u'winter',\n",
+       " u'deserves',\n",
+       " u'divided',\n",
+       " u'Who',\n",
+       " u'poking',\n",
+       " u'Why',\n",
+       " u'cavil',\n",
+       " u'spot',\n",
+       " u'improving',\n",
+       " u'such',\n",
+       " u'dove',\n",
+       " u'disagreeable',\n",
+       " u'stress',\n",
+       " u'canvassing',\n",
+       " u'natural',\n",
+       " u'conscious',\n",
+       " u'consequently',\n",
+       " u'inhabiting',\n",
+       " u'so',\n",
+       " u'swollen',\n",
+       " u'pulled',\n",
+       " u'Encouraged',\n",
+       " u'unsolicited',\n",
+       " u'LESS',\n",
+       " u'years',\n",
+       " u'course',\n",
+       " u'quarrelled',\n",
+       " u'tendency',\n",
+       " u'thoughtfulness',\n",
+       " u'tore',\n",
+       " u'solitary',\n",
+       " u'limbs',\n",
+       " u'derive',\n",
+       " u'haughty',\n",
+       " u'faults',\n",
+       " u'torn',\n",
+       " u'troubles',\n",
+       " u'attraction',\n",
+       " u'suspicion',\n",
+       " u'instantly',\n",
+       " u'conveying',\n",
+       " u'Folly',\n",
+       " u'bashful',\n",
+       " u'overpowering',\n",
+       " u'arriving',\n",
+       " u'twilight',\n",
+       " u'establishing',\n",
+       " u'bowling',\n",
+       " u'quarter',\n",
+       " u'cordiality',\n",
+       " u'square',\n",
+       " u'beloved',\n",
+       " u'irremediable',\n",
+       " u'entering',\n",
+       " u'prudently',\n",
+       " u'retailed',\n",
+       " u'neighbourhood',\n",
+       " u'giddy',\n",
+       " u'astray',\n",
+       " u'contained',\n",
+       " u'investigation',\n",
+       " u'suggesting',\n",
+       " u'possibility',\n",
+       " u'quite',\n",
+       " u'Offended',\n",
+       " u'complicated',\n",
+       " u'besides',\n",
+       " u'remainder',\n",
+       " u'patronage',\n",
+       " u'.\\'\"',\n",
+       " u'modest',\n",
+       " u'crossness',\n",
+       " u'undesirable',\n",
+       " u'neglect',\n",
+       " u'jumbled',\n",
+       " u'emotion',\n",
+       " u'spoken',\n",
+       " u'one',\n",
+       " u'conscientiously',\n",
+       " u'habitation',\n",
+       " u'open',\n",
+       " u'partook',\n",
+       " u'city',\n",
+       " u'Monday',\n",
+       " u'2',\n",
+       " u'stuffed',\n",
+       " u'JOHN',\n",
+       " u'lingering',\n",
+       " u'ridiculous',\n",
+       " u'Willoughbys',\n",
+       " u'representing',\n",
+       " u'Seven',\n",
+       " u'Exert',\n",
+       " u'depressed',\n",
+       " u'rival',\n",
+       " u'folly',\n",
+       " u'coats',\n",
+       " u'future',\n",
+       " u'wandering',\n",
+       " u'prospect',\n",
+       " u'addressing',\n",
+       " u'illness',\n",
+       " u'KNEW',\n",
+       " u'tasted',\n",
+       " u'turned',\n",
+       " u'argument',\n",
+       " u'jewels',\n",
+       " u'sad',\n",
+       " u'tastes',\n",
+       " u'rained',\n",
+       " u'lurking',\n",
+       " u'saw',\n",
+       " u'sat',\n",
+       " u'BOTH',\n",
+       " u'fashionable',\n",
+       " u'unsuitable',\n",
+       " u'wronged',\n",
+       " u'aside',\n",
+       " u'note',\n",
+       " u'intends',\n",
+       " u'take',\n",
+       " u'Half',\n",
+       " u'wanting',\n",
+       " u'coincide',\n",
+       " u'altered',\n",
+       " u'opposite',\n",
+       " u'syllable',\n",
+       " u'discerning',\n",
+       " u'knew',\n",
+       " u'unkindness',\n",
+       " u'horridly',\n",
+       " u'remarks',\n",
+       " u'creditable',\n",
+       " u'impoverishing',\n",
+       " u'lawn',\n",
+       " u'blockhead',\n",
+       " u'drive',\n",
+       " u'crooked',\n",
+       " u'trembled',\n",
+       " u'walking',\n",
+       " u'merit',\n",
+       " u'bright',\n",
+       " u'imagined',\n",
+       " u'slow',\n",
+       " u'unkind',\n",
+       " u'transact',\n",
+       " u'tears',\n",
+       " u'going',\n",
+       " u'uppermost',\n",
+       " u'entreaties',\n",
+       " u'dispute',\n",
+       " u'guarded',\n",
+       " u'dissimilar',\n",
+       " u'condemning',\n",
+       " u'Having',\n",
+       " u'Unaccountable',\n",
+       " u'borrow',\n",
+       " u'worried',\n",
+       " u'recurred',\n",
+       " u'landlord',\n",
+       " u'liable',\n",
+       " u'where',\n",
+       " u'gout',\n",
+       " u'Dashwood',\n",
+       " u'noisier',\n",
+       " u'CATCHING',\n",
+       " u'hastened',\n",
+       " u'mutton',\n",
+       " u'That',\n",
+       " u'alarming',\n",
+       " u'refreshed',\n",
+       " u'affecting',\n",
+       " u'illiberal',\n",
+       " u'screen',\n",
+       " u'apiece',\n",
+       " u'rapacious',\n",
+       " u'gratefully',\n",
+       " u'spare',\n",
+       " u'conversed',\n",
+       " u'residence',\n",
+       " u'thickly',\n",
+       " u's',\n",
+       " u'expression',\n",
+       " u'allowance',\n",
+       " u'yearly',\n",
+       " u'gaiety',\n",
+       " u'Westons',\n",
+       " u'considers',\n",
+       " u'cramps',\n",
+       " u'plantation',\n",
+       " u'stretch',\n",
+       " u'west',\n",
+       " u'braving',\n",
+       " u'Harris',\n",
+       " u'practised',\n",
+       " u'motives',\n",
+       " u'hilarity',\n",
+       " u'wants',\n",
+       " u'enable',\n",
+       " u'lanes',\n",
+       " u'Whenever',\n",
+       " u'thousand',\n",
+       " u'formed',\n",
+       " u'observe',\n",
+       " u'Davies',\n",
+       " u'possessor',\n",
+       " u'subsisted',\n",
+       " u'former',\n",
+       " u'pretence',\n",
+       " u'single',\n",
+       " u'intimately',\n",
+       " u'newspaper',\n",
+       " u'situation',\n",
+       " u'endured',\n",
+       " u'.)--',\n",
+       " u'DID',\n",
+       " u'brow',\n",
+       " u'engaged',\n",
+       " u'regularity',\n",
+       " u'fame',\n",
+       " u'Towards',\n",
+       " u'reanimate',\n",
+       " u'forebodings',\n",
+       " u'unemployed',\n",
+       " u'sterling',\n",
+       " u'sickness',\n",
+       " u'I',\n",
+       " u'defy',\n",
+       " u'entanglement',\n",
+       " u'devolved',\n",
+       " u'vacant',\n",
+       " u'May',\n",
+       " u'veal',\n",
+       " u'summer',\n",
+       " u'being',\n",
+       " u'rest',\n",
+       " u'judiciously',\n",
+       " u'scrape',\n",
+       " u'provocation',\n",
+       " u'sixteen',\n",
+       " u'deceiving',\n",
+       " u'grounded',\n",
+       " u'instrument',\n",
+       " u'joyful',\n",
+       " u'around',\n",
+       " u'dark',\n",
+       " u'preference',\n",
+       " u'world',\n",
+       " u'vague',\n",
+       " u'dare',\n",
+       " u'doubtingly',\n",
+       " u'stranger',\n",
+       " u'discarded',\n",
+       " u'superiority',\n",
+       " u'militate',\n",
+       " u'satisfactory',\n",
+       " u'Brandon',\n",
+       " u'divine',\n",
+       " u'thinks',\n",
+       " u'dimensions',\n",
+       " u'noon',\n",
+       " u'restoring',\n",
+       " u'destroys',\n",
+       " u'biased',\n",
+       " u'power',\n",
+       " u'intimate',\n",
+       " u'sprung',\n",
+       " u';\"',\n",
+       " u\";'\",\n",
+       " u'edtions',\n",
+       " u'stone',\n",
+       " u'joyfully',\n",
+       " u'meal',\n",
+       " u'practicable',\n",
+       " u'act',\n",
+       " u'luck',\n",
+       " u'afforded',\n",
+       " u'image',\n",
+       " u'widower',\n",
+       " u'lively',\n",
+       " u'parties',\n",
+       " u'dawned',\n",
+       " u'her',\n",
+       " u'endeavouring',\n",
+       " u'lounging',\n",
+       " u'sealed',\n",
+       " u'DRAW',\n",
+       " u'complete',\n",
+       " u'imbibed',\n",
+       " u'fastidious',\n",
+       " u'survived',\n",
+       " u'Harry',\n",
+       " u'with',\n",
+       " u'buying',\n",
+       " u'handsome',\n",
+       " u'abused',\n",
+       " u'pull',\n",
+       " u'rage',\n",
+       " u'House',\n",
+       " u'dirty',\n",
+       " u'abuses',\n",
+       " u'agree',\n",
+       " u'darker',\n",
+       " u'gone',\n",
+       " u'fright',\n",
+       " u'Hon',\n",
+       " u'certain',\n",
+       " u'accents',\n",
+       " u'stealing',\n",
+       " u'am',\n",
+       " u'Thursday',\n",
+       " u'an',\n",
+       " u'How',\n",
+       " u'as',\n",
+       " u'associating',\n",
+       " u'at',\n",
+       " u'walks',\n",
+       " u'ay',\n",
+       " u'watched',\n",
+       " u'tranquil',\n",
+       " u'admiring',\n",
+       " u'sanguine',\n",
+       " u'blinded',\n",
+       " u'incomprehensible',\n",
+       " u'Lady',\n",
+       " u'disgraceful',\n",
+       " u'Gracious',\n",
+       " u'contend',\n",
+       " u'accosted',\n",
+       " u'infirmity',\n",
+       " u'tricks',\n",
+       " u'groom',\n",
+       " u'impossibility',\n",
+       " u'Street',\n",
+       " u'mass',\n",
+       " u'sensibility',\n",
+       " u'original',\n",
+       " u'curate',\n",
+       " u'consider',\n",
+       " u'caused',\n",
+       " u'welfare',\n",
+       " u'reasoning',\n",
+       " u'improperly',\n",
+       " u'Biddy',\n",
+       " u'attentive',\n",
+       " u'to',\n",
+       " u'dressing',\n",
+       " u'smile',\n",
+       " u'Precious',\n",
+       " u'paying',\n",
+       " u'Scarcely',\n",
+       " u'appointment',\n",
+       " u'returned',\n",
+       " u'puzzled',\n",
+       " u'Conversation',\n",
+       " u'candid',\n",
+       " u'Whitwell',\n",
+       " u'condition',\n",
+       " u'LOOK',\n",
+       " u'ingratitude',\n",
+       " u'laying',\n",
+       " u'joined',\n",
+       " u'large',\n",
+       " u'sang',\n",
+       " u'desertion',\n",
+       " u'small',\n",
+       " u'quicker',\n",
+       " u'honourably',\n",
+       " u'Should',\n",
+       " u'past',\n",
+       " u'carriages',\n",
+       " u'honourable',\n",
+       " u'pass',\n",
+       " u'situated',\n",
+       " u'Drury',\n",
+       " u'clock',\n",
+       " u'prevailed',\n",
+       " u'undecided',\n",
+       " u'nurse',\n",
+       " u'method',\n",
+       " u'contrast',\n",
+       " u'full',\n",
+       " u'indecision',\n",
+       " u'hours',\n",
+       " u'concluding',\n",
+       " u'outdone',\n",
+       " u'mound',\n",
+       " u'compliance',\n",
+       " u'experience',\n",
+       " u'prior',\n",
+       " u'cessation',\n",
+       " u'sweetness',\n",
+       " u'followed',\n",
+       " u'marriages',\n",
+       " u'regiment',\n",
+       " u'crowned',\n",
+       " u'beheld',\n",
+       " u'attendance',\n",
+       " u'6',\n",
+       " u'more',\n",
+       " u'door',\n",
+       " u'inquisitiveness',\n",
+       " u'company',\n",
+       " u'spoilt',\n",
+       " u'Relate',\n",
+       " u'jealousies',\n",
+       " u'foundations',\n",
+       " u'objections',\n",
+       " u'?--',\n",
+       " u'cunning',\n",
+       " u'keeping',\n",
+       " u'gravel',\n",
+       " u'sent',\n",
+       " u'learn',\n",
+       " u'Your',\n",
+       " u'beautiful',\n",
+       " u'gallop',\n",
+       " u'neglected',\n",
+       " u'accept',\n",
+       " u'autumn',\n",
+       " u'unbiased',\n",
+       " u'sense',\n",
+       " u'disliked',\n",
+       " u'dress',\n",
+       " u'salts',\n",
+       " u'reproachfully',\n",
+       " u'information',\n",
+       " u'respective',\n",
+       " u'imminent',\n",
+       " u'enlarge',\n",
+       " u'dismissed',\n",
+       " u'glowing',\n",
+       " u'footman',\n",
+       " u'relinquished',\n",
+       " u'creature',\n",
+       " u'Hanover',\n",
+       " u'plans',\n",
+       " u'disgraced',\n",
+       " u'sympathize',\n",
+       " u'conveniences',\n",
+       " u'flutter',\n",
+       " u'refuse',\n",
+       " u'imagery',\n",
+       " u'replied',\n",
+       " u'adorned',\n",
+       " u'passages',\n",
+       " u'incessantly',\n",
+       " u'rectory',\n",
+       " u'installed',\n",
+       " u'attitude',\n",
+       " u'paper',\n",
+       " u'pang',\n",
+       " u'signs',\n",
+       " u'smiling',\n",
+       " u'its',\n",
+       " u'saucy',\n",
+       " u'rapidly',\n",
+       " u'curacy',\n",
+       " u'symptoms',\n",
+       " u'shuddering',\n",
+       " u'travelling',\n",
+       " u'entire',\n",
+       " u'propose',\n",
+       " u'deliberating',\n",
+       " u'likeness',\n",
+       " u'hereafter',\n",
+       " u'always',\n",
+       " u'assemblies',\n",
+       " u'Newton',\n",
+       " u'truths',\n",
+       " u'eloquence',\n",
+       " u'found',\n",
+       " u'shocking',\n",
+       " u'begged',\n",
+       " u'upstairs',\n",
+       " u'resolute',\n",
+       " u'disclaiming',\n",
+       " u'grandmothers',\n",
+       " u'exorbitant',\n",
+       " u'really',\n",
+       " u'inquired',\n",
+       " u'embellishment',\n",
+       " u'missed',\n",
+       " u'candlelight',\n",
+       " u'silks',\n",
+       " u'denoted',\n",
+       " u'darling',\n",
+       " u'impudence',\n",
+       " u'attentions',\n",
+       " u'belief',\n",
+       " u'risen',\n",
+       " u'Steeles',\n",
+       " u'SHE',\n",
+       " u'imagine',\n",
+       " u'rises',\n",
+       " u'reproach',\n",
+       " u'II',\n",
+       " ...}"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "set(text2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6833"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(set(text2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<Text: Moby Dick by Herman Melville 1851>"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "text1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<Text: Sense and Sensibility by Jane Austen 1811>"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "text2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "imperial subtly impalpable pitiable curious abundant perilous\n",
+      "trustworthy untoward singular lamentable few determined maddens\n",
+      "horrible tyrannical lazy mystifying christian exasperate\n"
+     ]
+    }
+   ],
+   "source": [
+    "text1.similar(\"monstrous\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "United States; fellow citizens; four years; years ago; Federal\n",
+      "Government; General Government; American people; Vice President; Old\n",
+      "World; Almighty God; Fellow citizens; Chief Magistrate; Chief Justice;\n",
+      "God bless; every citizen; Indian tribes; public debt; one another;\n",
+      "foreign nations; political parties\n"
+     ]
+    }
+   ],
+   "source": [
+    "text4.collocations()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "a_pretty is_pretty a_lucky am_glad be_glad\n"
+     ]
+    }
+   ],
+   "source": [
+    "text2.common_contexts([\"monstrous\",\"very\"])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "image/png": "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\nDBFJUjNDRJLUzBCRJDUzRCRJzQwRSVIzQ0SS1MwQkSQ1M0QkSc0MEUlSM0NEktTMEJEkNTNEJEnN\nDBFJUjNDRJLUzBCRJDUzRCRJzQwRSVIzQ0SS1MwQkSQ1M0QkSc0MEUlSM0NEktTMEJEkNTNEJEnN\nDBFJUjNDRJLUzBCRJDUzRCRJzQwRSVIzQ0SS1MwQkSQ1M0QkSc0MEUlSM0NEktTMEJEkNTNEJEnN\nDBFJUjNDRJLUzBCRJDUzRCRJzQwRSVIzQ0SS1MwQkSQ1M0QkSc0MEUlSM0NEktTMEJEkNTNEJEnN\nDBFJUjNDRJLUzBCRJDUzRCRJzQwRSVIzQ0SS1MwQkSQ1M0QkSc0MEUlSM0NEktTMEJEkNTNEJEnN\nDBFJUjNDRJLUzBCRJDUzRCRJzQwRSVIzQ0SS1MwQkSQ1M0QkSc0MEUlSM0NEktTMEJEkNTNEJEnN\nDBFJUjNDRJLUzBCRJDUzRCRJzQwRSVIzQ0SS1MwQkSQ1M0QkSc0MEUlSM0NEktTMEJEkNTNEJEnN\nDBFJUjNDRJLUzBCRJDUzRCRJzQwRSVIzQ0SS1MwQkSQ1M0QkSc0MEUlSM0NEktTMEJEkNTNEJEnN\nDBFJUrPNDpEIfvoE5z8mgo9u7nYlSVvfdJyJ5JZYZtkyWLQItt8edtkFjj9+YtpRR5XH1atL+erV\nE9P6432rVg1/vmpVGfrr769rcLnVq8tw1FGP3e7gtkdHh9epe756dZln0aKJbXX1WLXqses/6iiI\ngIULJ4ZddinrGB2dPH+3rm4bq1eXfbls2eS2dfUeHS3rX7VqYp5uP/etWgXLl5dpu+xSHrvnCxcO\nb2O3rW7Z/r7v5jn++Ml90F+mv+1ly8p8CxbANtuU50uWlLJu3uXLS9no6MT2uuOoq3M3jI6W6aOj\nZX0LF5Z5u7qMjpZtjI6WsqOOKo/dNpYtm3wMLV8+uU3dtG7/LltW6tC1ZdGi8ryr77JlZdklS8rQ\n9VG33a6vu33ZzbNkyUS9u3Z1Q7+sv9/7+6zrr66u/fp36+iOk+XLJ/pr2bKJ46TfV4P9P9i3/eO9\n296mvI4Hy/vH+eDQ9V9X5+XLJ78euuO9q1t3LI+Olv057PgXkJmPO0CeAHl8Hf8LyK/W8UMhz4S8\nD/K/Q14LeQnkznX6EZCXQV4FeX6v/BjI0+r4TpDnQl5eh4OG14GMyISJYenSfNTISHkcHy/l4+MT\n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\n",
+      "text/plain": [
+       "<matplotlib.figure.Figure at 0x1255f050>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "import numpy\n",
+    "%matplotlib inline\n",
+    "text1.dispersion_plot(['whale'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<Text: Inaugural Address Corpus>"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "text4\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "image/png": "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\n",
+      "text/plain": [
+       "<matplotlib.figure.Figure at 0x12573fd0>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "text4.dispersion_plot(['citizens','democracy','freedom','duties','America'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "fixed!\n"
+     ]
+    }
+   ],
+   "source": [
+    "string='user'\n",
+    "if string=='user':\n",
+    "    print 'fixed!'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "def welcome (name):\n",
+    "    print 'Welcome %s' % name\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome Toby\n"
+     ]
+    }
+   ],
+   "source": [
+    "welcome('Toby')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "20"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len (text2)/len(set(text2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "def lexical_diversity(text): #average number of times a token occurs\n",
+    "    return len(text)/len(set(text))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "20"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "lexical_diversity(text2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "sent1=['call','me','Ishmael']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['call', 'me', 'Ishmael']"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sent1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "sent1.append('Please')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['call', 'me', 'Ishmael', 'Please']"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sent1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['call', 'me', 'Ishmael', 'Please']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print sent1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Now chopping:  banana\n",
+      "Now chopping:  apple\n",
+      "Now chopping:  melon\n",
+      "Fruit Salad!\n"
+     ]
+    }
+   ],
+   "source": [
+    "fruits=['banana','apple','melon']\n",
+    "for fruit in fruits:\n",
+    "    print 'Now chopping: ', fruit\n",
+    "print 'Fruit Salad!'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "library=[text1,text2,text3,text4,text5,text6,text7,text8,text9]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(<Text: Moby Dick by Herman Melville 1851>, 13)\n",
+      "(<Text: Sense and Sensibility by Jane Austen 1811>, 20)\n",
+      "(<Text: The Book of Genesis>, 16)\n",
+      "(<Text: Inaugural Address Corpus>, 14)\n",
+      "(<Text: Chat Corpus>, 7)\n",
+      "(<Text: Monty Python and the Holy Grail>, 7)\n",
+      "(<Text: Wall Street Journal>, 8)\n",
+      "(<Text: Personals Corpus>, 4)\n",
+      "(<Text: The Man Who Was Thursday by G . K . Chesterton 1908>, 10)\n"
+     ]
+    }
+   ],
+   "source": [
+    "for book in library:\n",
+    "    print (book, lexical_diversity(book))\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(<Text: Moby Dick by Herman Melville 1851>, 13)\n",
+      "(<Text: Sense and Sensibility by Jane Austen 1811>, 20)\n",
+      "(<Text: The Book of Genesis>, 16)\n",
+      "(<Text: Inaugural Address Corpus>, 14)\n",
+      "(<Text: Chat Corpus>, 7)\n",
+      "(<Text: Monty Python and the Holy Grail>, 7)\n",
+      "(<Text: Wall Street Journal>, 8)\n",
+      "(<Text: Personals Corpus>, 4)\n",
+      "(<Text: The Man Who Was Thursday by G . K . Chesterton 1908>, 10)\n"
+     ]
+    }
+   ],
+   "source": [
+    "library=[text1,text2,text3,text4,text5,text6,text7,text8,text9]\n",
+    "for book in library:\n",
+    "    print (book, lexical_diversity(book))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "_Feature((2, 6, 0, 'alpha', 2), (3, 0, 0, 'alpha', 0), 65536)"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "print_function\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[u'Achbor',\n",
+       " u'Adah',\n",
+       " u'Adam',\n",
+       " u'Adbeel',\n",
+       " u'Admah',\n",
+       " u'Adullamite',\n",
+       " u'After',\n",
+       " u'Aholibamah',\n",
+       " u'Ahuzzath',\n",
+       " u'Ajah']"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sorted(set(text3)) [25:35]"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "metadata": {},
+   "source": [
+    "print text4.index('awaken')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'ho' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-51-81d2756557b6>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m()\u001b[0m\n\u001b[1;32m----> 1\u001b[1;33m \u001b[1;32mprint\u001b[0m \u001b[0mho\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m: name 'ho' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "print ho\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "173\n"
+     ]
+    }
+   ],
+   "source": [
+    "print text4.index('awaken')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the\n"
+     ]
+    }
+   ],
+   "source": [
+    "print text4[158]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "nltk.text.Text"
+      ]
+     },
+     "execution_count": 54,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(text4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[u'But', u'there', u'is', u'one', u'small', u'problem', u'.', u'ARTHUR', u':', u'What', u'is', u'that', u'?', u'HEAD', u'KNIGHT', u':', u'We', u'are', u'now', u'...', u'no', u'longer', u'the', u'Knights', u'Who', u'Say', u\"'\", u'Ni', u\"'.\", u'KNIGHTS', u'OF', u'NI', u':', u'Ni', u'!', u'Shh', u'!', u'HEAD', u'KNIGHT', u':', u'Shh', u'!', u'We', u'are', u'now', u'the', u'Knights', u'Who', u'Say', u\"'\", u'Ecky', u'-', u'ecky', u'-', u'ecky', u'-', u'ecky', u'-', u'pikang', u'-', u'zoop', u'-', u'boing', u'-', u'goodem', u'-', u'zoo', u'-', u'owli', u'-', u'zhiv', u\"'.\", u'RANDOM', u':', u'Ni', u'!', u'HEAD', u'KNIGHT']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print text6[12478:12556] #Unicode and ASCII text encoding"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "sent=['The','Quick','brown','fox']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The\n"
+     ]
+    }
+   ],
+   "source": [
+    "print sent[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The\n",
+      "brown\n"
+     ]
+    }
+   ],
+   "source": [
+    "sent=['The','Quick','brown','fox']\n",
+    "print sent[0]\n",
+    "print sent[2]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['The', 'fast', 'brown', 'cow']\n"
+     ]
+    }
+   ],
+   "source": [
+    "sent[1]='fast'\n",
+    "sent[3]='cow'\n",
+    "print sent"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "#it was a dark and stormy night;the rain fell in torrents"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "opening=['it', 'was', 'a', 'dark', 'and', 'stormy', 'night',';','the', 'rain', 'fell', 'in', 'torrents']\n",
+    "#clause=[]\n",
+    "#for token in opening:\n",
+    "clause=opening[0:8]#slice part of vector\n",
+    "\n",
+    "\n",
+    "#clause=\n",
+    "alphabetise_clause=sorted(clause)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['it', 'was', 'a', 'dark', 'and', 'stormy', 'night', ';']"
+      ]
+     },
+     "execution_count": 76,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "clause"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[';', 'a', 'and', 'dark', 'it', 'night', 'stormy', 'was']"
+      ]
+     },
+     "execution_count": 77,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "alphabetise_clause"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "opening2='it' 'was' 'a' 'dark' 'and' 'stormy' 'night' ';' 'the' 'rain' 'fell' 'in' 'torrents'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "opening2='it was a dark and stormy night;the rain fell in torrents'.split()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['it',\n",
+       " 'was',\n",
+       " 'a',\n",
+       " 'dark',\n",
+       " 'and',\n",
+       " 'stormy',\n",
+       " 'night;the',\n",
+       " 'rain',\n",
+       " 'fell',\n",
+       " 'in',\n",
+       " 'torrents']"
+      ]
+     },
+     "execution_count": 79,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "opening2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 80,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'it'"
+      ]
+     },
+     "execution_count": 80,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "opening2[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 83,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "from nltk.probability import FreqDist\n",
+    "from collections import Counter\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "fdist1=FreqDist(text1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[(u',', 18713),\n",
+       " (u'the', 13721),\n",
+       " (u'.', 6862),\n",
+       " (u'of', 6536),\n",
+       " (u'and', 6024),\n",
+       " (u'a', 4569),\n",
+       " (u'to', 4542),\n",
+       " (u';', 4072),\n",
+       " (u'in', 3916),\n",
+       " (u'that', 2982),\n",
+       " (u\"'\", 2684),\n",
+       " (u'-', 2552),\n",
+       " (u'his', 2459),\n",
+       " (u'it', 2209),\n",
+       " (u'I', 2124),\n",
+       " (u's', 1739),\n",
+       " (u'is', 1695),\n",
+       " (u'he', 1661),\n",
+       " (u'with', 1659),\n",
+       " (u'was', 1632),\n",
+       " (u'as', 1620),\n",
+       " (u'\"', 1478),\n",
+       " (u'all', 1462),\n",
+       " (u'for', 1414),\n",
+       " (u'this', 1280),\n",
+       " (u'!', 1269),\n",
+       " (u'at', 1231),\n",
+       " (u'by', 1137),\n",
+       " (u'but', 1113),\n",
+       " (u'not', 1103),\n",
+       " (u'--', 1070),\n",
+       " (u'him', 1058),\n",
+       " (u'from', 1052),\n",
+       " (u'be', 1030),\n",
+       " (u'on', 1005),\n",
+       " (u'so', 918),\n",
+       " (u'whale', 906),\n",
+       " (u'one', 889),\n",
+       " (u'you', 841),\n",
+       " (u'had', 767),\n",
+       " (u'have', 760),\n",
+       " (u'there', 715),\n",
+       " (u'But', 705),\n",
+       " (u'or', 697),\n",
+       " (u'were', 680),\n",
+       " (u'now', 646),\n",
+       " (u'which', 640),\n",
+       " (u'?', 637),\n",
+       " (u'me', 627),\n",
+       " (u'like', 624)]"
+      ]
+     },
+     "execution_count": 86,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fdist1.most_common(50)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "906"
+      ]
+     },
+     "execution_count": 88,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fdist1['whale']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "image/png": "iVBORw0KGgoAAAANSUhEUgAAAZYAAAEjCAYAAAAR/ydQAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz\nAAALEgAACxIB0t1+/AAAIABJREFUeJzsnXmYFNX1sN8jqLiAAy6ouOCGiiIICCbivkcjaqIiGrdo\nEtGoMfEnxMQtfiHuokajhrivMRqNIuICrqAsKggIGDfAiIoMmwIC5/vj3GZqmq7unpnu6u7p8z5P\nPVN1b91zbtd017n3nLuIquI4juM4hWKNUlfAcRzHaV64YXEcx3EKihsWx3Ecp6C4YXEcx3EKihsW\nx3Ecp6C4YXEcx3EKSlENi4gMFZE5IjIxQ95vRWSliLSLpA0SkRkiMlVEDomkdxeRiSIyXURuiqSv\nJSKPhDKjRWSrSN6p4f5pInJKMT+n4ziOU0exeyx3A4emJ4rIFsDBwKeRtJ2B44GdgcOB20REQvbt\nwM9VtRPQSURSMn8OfKOqOwA3AdcEWW2BS4E9gN7AZSKyQeE/nuM4jpNOUQ2Lqr4OzMuQdSNwUVpa\nX+ARVV2uqp8AM4BeIrIp0FpVx4b77gOOjpS5N5w/DhwQzg8FRqjqfFWtBUYAhxXgIzmO4zg5SDzG\nIiJHATNVdVJaVgdgZuR6dkjrAMyKpM8KafXKqOoKYH5wrcXJchzHcYpMyySVicg6wO8xN1hRVBRJ\nruM4jpMniRoWYDugI/BeiJ9sAUwQkV5Yr2KryL1bhLTZwJYZ0onkfS4iLYA2qvqNiMwG9ksrMzJT\nhbbffntdtGgRc+bMsQputx2tW7fm3XffBaBbt24Afu3Xfu3XVX/dvn17gFXvS1XN3JhX1aIemCGZ\nFJP3MdA2nHcG3gHWArYBPgQk5I0BemE9kmHAYSF9AHBbOO+HxWgA2gL/BTaInNfE1EHjuOyyywqa\n5/IqR1e5y0tSV7nLS1JXtcnLlhfenRnf+0XtsYjIQ1jPYUMR+Qy4TFXvjtyiwVigqlNE5DFgCvA9\nMCBUHuAc4B6gFTBMVYeH9KHA/SIyA5iLGRdUdZ6I/AkYF3RcoRbEX42UBc7EkiVLCprn8ipHV7nL\nS1JXuctLUle1ycuVF0dRDYuq9s+Rv23a9WBgcIb7xgNdMqQvxYYoZ5J9D2aMHMdxnARpcfnll5e6\nDiXloosuujzuGbRs2ZKOHTsWLM/lVY6ucpeXpK5yl5ekrmqTly3viiuu4PLLL78iUxmp8zZVJyKi\n1f4MHMdxGoqIxAbvq36tsNSoh0zU1mYMyzQ6z+VVjq5yl5ekrnKXl6SuapOXKy+OqjcsjuM4TmFx\nV5i7whzHcRqMu8Icx3GcxKh6w+IxlsqRl6SucpeXpK5yl5ekrmqTlysvjqo3LI7jOE5h8RiLx1gc\nx3EajMdYHMdxnMSoesPiMZbKkZekrnKXl6SucpeXpK5qk5crL46qNyyO4zhOYfEYi8dYHMdxGozH\nWBzHcZzEqHrD4jGWypGXpK5yl5ekrnKXl6SuapOXKy+OqjcsjuM4TmHxGIvHWBzHcRqMx1gcx3Gc\nxKh6w+IxlsqRl6SucpeXpK5yl5ekrmqTlysvjqo3LI7jOE5h8RiLx1gcx3EajMdYHMdxnMSoesPi\nMZbKkZekrnKXl6SucpeXpK5qk5crL46iGhYRGSoic0RkYiTtGhGZKiLvisi/RKRNJG+QiMwI+YdE\n0ruLyEQRmS4iN0XS1xKRR0KZ0SKyVSTv1HD/NBE5pZif03Ecp7nSmEhBUWMsItIHWATcp6q7hbSD\ngJdVdaWI/AVQVR0kIp2BB4E9gC2AF4EdVFVF5C3gXFUdKyLDgCGq+ryInA10UdUBInICcIyq9hOR\ntsA4oDsgwHigu6rOz1BHj7E4jlPVLFsGH38M06evfpx7LgwatHqZbDGWlsWsrKq+LiJbp6W9GLkc\nA/wknB8FPKKqy4FPRGQG0EtEPgVaq+rYcN99wNHA80Bf4LKQ/jhwSzg/FBiRMiQiMgI4DHi0kJ/P\ncRynUlCF2bNXNxzTpplRWbEic7kZMxquq9QxljOAYeG8AzAzkjc7pHUAZkXSZ4W0emVUdQUwX0Ta\nZZG1Gh5jqRx5Seoqd3lJ6ip3eUnqqgR5CxfCuHHw4INw2WXQrx/svjv88Ie1bLklHHggnH023Hgj\nPPssfPghdOlSS8eOcMgh1kO5+WYYPhw++giuvbbhMZai9liyISKXAN+r6sOFFFtAWY7jOGXJihXw\n3/9abyN6rLEGvPxy5jLdusHGG0OnTnbsuGPd+cYbwyabZC7XiNh9aQyLiJwG/Ag4IJI8G9gycr1F\nSItLj5b5XERaAG1U9RsRmQ3sl1ZmZKa6LFy4kIEDB9KqVSsAevbsSZ8+faipqaGmpmZVy6CmpgYg\n7+sU0XyX1zR50TSXl/35Vpu8uOtKlzdzZi0zZ8KMGTVMmwYLF9r1c8/VsGwZdOtm97/7rpXv1g32\n2KOW776rYccdYc89rZfSsWMNnTrVINL43+OoUaMYPnw4wKr3ZRxFnyApIh2B/6hql3B9GHA9sI+q\nzo3clwre98bcVi9QF7wfA5wHjAWeBW5W1eEiMgDYNQTv+wFHZwjerxHOe6jqarbXg/eO45QSVfj8\nc5g6FaZMsb+p48sv48ttsYX1OlJHqhey1VbQokXx650teI+qFu0AHgI+B5YCnwGnAzOAT4EJ4bgt\ncv8g4ENgKnBIJL0HMCmUHRJJXxt4LKSPATpG8k4L6dOBU+Lq2K1bN41j3rx5Bc1zeZWjq9zlJamr\n3OUlqasp8lauVP30U9Vhw1Svu071jDNU+/efp23aqJp5qX906zZP11lHtVs31RNOUL3sMtWHHlId\nP171889L/2zNfGR+rxZ7VFj/DMl3Z7l/MDA4Q/p4oEuG9KXA8TGy7gHuybOqjuM4BUEVZs6EyZPr\nju++s0D5okX17+3WDRYsgHbtoHNn2Hnnur9bb229kDUyDLFqTNwjSXytMHeFOY7TCFIurMmT4f33\n64zIlCmwcGHmMptsYoZjl13sb+rYeGOQCht6VLJ5LI7jOM2BefNg4kSYNMmMSMqQxPUcNt7YjEf0\n6NwZNtoo2XqXilLPYyk5Po+lcuQlqavc5SWpq9zlFVLX8uUWNH/yyVp+/3s48kgLhrdrB/vtB0OH\n1nLHHfDGG2ZU2rWDvfe2eSF3313LyJEWcP/ySxg5Em691fJ22602o1Ep9edtal4c3mNxHKcqWbgQ\n3nuv/jF5MixZYrGPd9+tu3eddaBLFzjoIDj1VNh1V+uFbLppnQurthYio4irGo+xeIzFcZo9X38N\n48fbjPTx4+347LPM9269NXTtCrvtVvd3u+2SGcJbSXiMxXGcqmHBAjMgb78NY8faeSYjss461vPo\n2rXu2G032GCD5Ovc3PAYi8dYKkZekrrKXV6SuspZ3rJlZjjuuaeW006zAHlNja2HNWgQfPRRLZ99\nBuuuC3vtBeefD/fdZy6vmTNrefttuOsuWx9r773rjEolPotiyMuVF4f3WBzHqQhU4ZNP4K237Bgz\nBiZMgKVL68dE1lrLrnv1gj59LDay446ru7LKfS5IJeMxFo+xOE5Zklqld8yYuiPTEiedOkHv3mZI\nevUyl9baaydf32rDYyyO45Q1qrY675tv1hmRyZNh5cr697VrZ0Zkzz3rjEnbtqWpsxOPx1g8xlIx\n8pLUVe7yktRVDHnLl9vIrJtugmOPhfbtbRmTW26p5a67bCLiGmtAjx5wzjlw//0waVItX38Nw4bB\npZfCoYfWGZVKfhblLC9XXhzeY3Ecp+gsW2YjtF55xeIkjzyy+rIn7dvDPvvAySdbj6R7dxu5laK2\ntvKWPalWPMbiMRbHKTjffWcB9ldesWP0aJt4GGXbbW0k1j772N/tt3fDUUl4jMVxnKKyZInFRUaO\nhFGj7HzZsvr3dO4M++5rhmSffWDzzUtSVScBPMbiMZaKkZekrnKXl6SuTOlLlpgBuemmWvbbz+aO\n7L8/XHklvPoqfP89/OQntZx3Hjz+uI3mmjwZbrsNDjusNtaoVOKzaM7ycuXF4T0Wx3FysnSpubZG\njbJeyejR9eePiNj5fvvZsffeFnz3tbOqE4+xeIzFcVYjFWwfOdKON99cPUbStau5tvbf31xb7dqV\npq5OafAYi+M4WVm+3GaxpwzJa6/Bt9/Wv6dLF+uNpAzJhhuWpKpOBeAxFo+xVIy8JHWVu7ym6lK1\nmMeQIXDUUWYkfvnLWgYOhOefN6Oy884wYAD8+9+1fPmlbXR1881wzDF1RqU5PAuX5zEWx3EayWef\nweuv297rL78MX3xRP79DB5vJvv/+1jPZdFNLr631WInTMDzG4jEWp5nyzTfm1nrpJXjxRZgxo37+\nZpvZKsCpY8stS1NPpzLxGIvjVAFLl9qWuS+8YIZk/HhzeaVo08Z6IwceaDsh7rSTT0h0ioPHWDzG\nUjHyktRV7vIA5s2rZdIkuP56OOwwWzfrwANh+PBaxo2DNdc0l9ZVV9mExblzbd+SX//a4ifpRqWS\nn0Wl1r3c5eXKi6OoPRYRGQocCcxR1d1CWlvgUWBr4BPgeFWdH/IGAWcAy4HzVXVESO8O3AO0Aoap\n6gUhfS3gPqAH8DVwgqp+FvJOBS4BFPh/qnpfMT+r4yTBN99YcP2552D2bIuVROnaFU44Af7yF9uL\nZL31SlNPp7opaoxFRPoAi4D7IoblamCuql4jIhcDbVV1oIh0Bh4E9gC2AF4EdlBVFZG3gHNVdayI\nDAOGqOrzInI20EVVB4jICcAxqtovGK9xQHdAgPFA95QBS6ujx1icskUV3n/fAu7PPmvzSaJLyW++\nORx8sB0HHWQLOTpOEpQsxqKqr4vI1mnJfYF9w/m9wChgIHAU8IiqLgc+EZEZQC8R+RRorapjQ5n7\ngKOB54Osy0L648At4fxQYESkJzQCOAzrKTlOWbNkifVEnnnGjpkz6/JatjT31hFHmPsrk0vLcUpN\nKWIsm6jqHABV/QLYJKR3ACI/IWaHtA7ArEj6rJBWr4yqrgDmi0i7LLJWw2MslSMvSV1Jy5szB/7x\nD5sjstFGZjhuvx023LCW9u3h9NNtza25c22U14UXwuab12Y0KpX+LMpZV7XJy5UXRzmMCiukH8rb\nbk5FoApTpsDTT5ur6+GH64/g2n13+PGP4fDDbW7JGlU/zMapJEphWOaISHtVnSMimwKpXaxnA9GR\n9FuEtLj0aJnPRaQF0EZVvxGR2cB+aWVGZqrMwoULGThwIK1atQKgZ8+e9OnTh5qaGmpqalZZ65ow\nQyzf6xTRfJfXNHnRtEqU9/338Prrtbz5JvzjHzV89BF062b5a60FBxwAJ5xQyw9+AJ06pcrDggWZ\n5WV7vo2pXyXLi7t2eYX7PY4aNYrhw4cDrHpfxpEzeC8i6wHfqepKEekE7AQ8p6rfZy1YV74j8B9V\n7RKurwa+UdWrY4L3vTG31QvUBe/HAOcBY4FngZtVdbiIDAB2DcH7fsDRGYL3a4TzHqq6Wp/Og/dO\nMfnuOxg+3NxYw4aZoUix8cZw5JHWMzn4YFh//dLV03EaSrbgfT4d7FeBViLSARgB/Awb+puP4oeA\nN4FOIvKZiJwO/AU4WESmAQeGa1R1CvAYMAUYBgyIvPHPAYYC04EZqjo8pA8FNgqB/guwQQCo6jzg\nT5hBeQu4IpNRAY+xVJK8JHU1Rd6SJfDUU3DSSbDJJran+5QptdTW2qTE//s/m8j4v/9ZXGX//Wtj\njUqlP4sk5CWpq9rk5cqLIx9XmKjqtyLyc+C2MEz43XyEq2r/mKyDYu4fDAzOkD4e6JIhfSlwfIys\ne8jTADpOU1m2DEaMsE2u7rgDFiyoy+vZE844wyYvdupUujo6TlLk4wp7BxgA3Aj8XFUni8iklGur\n0nFXmNNYVqyw/dwffhj+9S+YN68ur3t3OP54OO4429vdcZobTZ3Hcj4wCHgyGJVtiQmEO05zR9U2\nwHr4YXj0UXNnpejSxWa9H3887LBD6eroOKUmnxhLe1U9SlWvBlDVj4DXilut5PAYS+XIS1JXevrU\nqXDppWYwfvnLWm66yYzKttvCJZfYkOGJE+Gcc2ozGpXm9CzKTV6SuqpNXq68OPLpsQwC/plHmuM0\nK2bNgkcegYcegnfeqUs/4AC44AI48UTYYw+f+e446cTGWETkcOBHWHA8uhRKG6CzqvYqfvWKj8dY\nnCiLFsE//wn33muB+NRXY4MN4Kc/hf79bZ/3Fi1KW0/HKTWNjbF8jg3XPQpbxDHFQuA3haue45QW\nVRg92ob+PvqoGReAVq1sjkn//jYDfu21S1tPx6kUYmMsqvqeqt4LbK+q90aOJ8I8kWaBx1gqR16h\ndc2ZA3fcUcsuu8Bee8HQoWZU9toLHnzQ1u967DE4+uj6RqU5PotKlpekrmqTlysvjnxiLL1E5HJs\n/5SW2Hpcqqo+iNKpOJYvt/1Mhg6F//wHdt3VAvPt28Opp9pijzvtBLW1tuOi4zgNJ595LB9grq/x\nwIpUuqrOLW7VksFjLNXBxx+bq+vuu22DLLA4yY9+BD//uf1dc83S1tFxKommzmOZr6rPFbhOjlN0\nli6FJ5+Ev//dlppPsf32ZkxOPRU226x09XOc5ko+81hGisi1IvIDEemeOopes4TwGEvlyMtX15Qp\n8Jvf2O6KJ54Ic+fW0qoV/OxnMGoUTJ8OAweaUWnuz6Ia5CWpq9rk5cqLI58eS+/wt2ckTYEDGqzN\ncYrEkiU2RPiuu2yBxxS77w7nnWcB+MjK4o7jFJGi7nlfCXiMpbJ5910zJg8+CPPnW9r669vKwmed\nBT16lLZ+jtNcaVKMRUQuzZSuqlc2tWKO0xgWLrS1uu66C8aNq0vv3duMyQkn+N4mjlNK8omxLI4c\nK4DDgY5FrFOieIylMuSpwttvwx/+UMtmm8Evf2lGpaYGfv1rGD++ljFjLCifblRKXfdiyEtSV7nL\nS1JXtcnLlRdHzh6Lql4fvRaR64DnG6zJcRrBwoXm5rrjDnN7desGixfD3ntb7+SnP4V11rF5J47j\nlAcNjrGEbX/Hqur2xalSsniMpTyZMMGMyUMP1S2xsuGGNkT4zDNh551LWz/HqXaaGmOZhI0CA2gB\nbAx4fMUpON9+a6sJ/+1vtudJir33hl/9yrb4bdWqdPVzHCc/8omxHAn8OByHAJur6q1FrVWCeIyl\n9PKmT7d5Jx06WIzk++9rqamB88+HyZNtleH+/c2olFvdSyUvSV3lLi9JXdUmL1deHPnEWD4Vka7A\n3iHpVWBigzU5ToQVK+Df/4a//hVefLEuvXdv2+ukb1+LnTiOU3nks1bY+cBZwBMh6RjgTlW9pch1\nSwSPsSTL4sVw221w8822kRaYAenfH84+2+edOE6lkC3Gko9hmQj8QFUXh+v1gNGqulvBa1oC3LAk\nw7ffwu23w9VXw1dfWVqnTmZMTj0V2rYtbf0cx2kY2QxLPjEWIbKqcThvNpuxeoyluPK++w5uvNH2\nhv/d78yo9O4Nw4fX8sEH5vZKNyrlUvdylpekrnKXl6SuapOXKy+OfAzL3cBbInJ52JdlDDC0wZrS\nEJFBIjJZRCaKyIMispaItBWRESIyTUSeF5EN0u6fISJTReSQSHr3IGO6iNwUSV9LRB4JZUaLyFZN\nrbOTP0uWwBNPwHbbwYUX2qZaPXvCsGG2W2Pv3r5XvOM0V/KaxxJWM+4TLl9T1XeapFRka2AksJOq\nLhORR4FhQGdgrqpeIyIXA21VdaCIdAYeBPYAtgBeBHZQVRWRt4BzVXWsiAwDhqjq8yJyNtBFVQeI\nyAnAMaraL0Nd3BVWQJYvt8Ugr7gCZs60tN13hyuvhCOOcGPiOM2FRrnCRGQPETkcQFUnqOrNqnoz\nsJmINDXEugBYBqwnIi2BdYDZQF/g3nDPvcDR4fwo4BFVXa6qnwAzsJ0tNwVaq2pq1sN9kTJRWY8D\nBzaxzk4WVq60bXx32cUmMM6cCV262Miv8ePhyCPdqDhOtZDNFXY1MCVD+mTg2qYoVdV5wPXAZ5hB\nma+qLwLtVXVOuOcLYJNQpAMwMyJidkjrAMyKpM8KafXKqOoKoFZE2qXXxWMsTSujCiNG1NKzpy3+\nOH26ub8efBBGjaqlb9/MBqUc6l7J8pLUVe7yktRVbfJy5cWRbR5La1X9ND0xzGvZqMGaIojItth2\nx1sD84F/ishJ1M3wX6WuKXrS1RZQlgO8844F3xcssHW8Nt8cLr0UzjjDtvltxPfRcZxmQDbDkm0A\n6LpN1NsTeENVvwEQkSeBHwJzRKS9qs4Jbq4vw/2zgS0j5bcIaXHp0TKfi0gLoE1KX5SFCxcycOBA\nWoW1Qnr27EmfPn2oqamhpqZmlbWuCbtE5XudIprfXOTNnw+DB9dw553QtWstrVvDtdfCOefA0qW1\nLF5cnPpF01xe9udbbfLirl1e4d4Xo0aNYvjw4QCr3pdxxAbvReRvwFzgD6notogIcAWwqar+Iqvk\nbEptJv8DWDB+KTbybCywFfCNql4dE7zvjbm4XqAueD8GOC+Ufxa4WVWHi8gAYNcQvO8HHO3B+6ax\nfLmt4/XHP1pvpGVLW7L+0kt9d0bHqTYaO4/lt8C2wIci8i8R+RcWNO8EXNiUCqnqe1igfTzwHuam\nuhOL6xwsItOwYPtfwv1TgMewmM8wYEDEGpyDDX+eDsxQ1eEhfSiwkYjMAC4ABmaqi8dY8ivz8su1\n7L67GZLaWjjkEJg4EW64ASCZ+mXLqzZ5Seoqd3lJ6qo2ebny4oh1hYWZ9ieGeMguIXmyqn7UYC2Z\n5V/L6oMAvgEOirl/MDA4Q/p4oEuG9KXA8U2vaXUza5bNQ5kxA95/3yY63nADHHWUj/JyHCczvue9\nu8Iy8v33MGQIXH65re+17rpwySVmZHzpesdxmrQfi1N9vPaareE1ebJd/+QntizLlltmL+c4jgP5\nLenSrPEYSx0ff1zLqafCPvuYUdluO3juOXj8cWjduvT1S1JXuctLUle5y0tSV7XJy5UXR149FhHp\ng43CultENgbWV9WPG6zNKUtWroS//x3uvx9efx3WXhsGDYKLL3a3l+M4DSefZfMvw+ad7KiqnURk\nc+CfqrpXEhUsNtUeY5k2Dc46y9xfAIcdBrfear0Vx3GcOJq6bP4x2FpdiwFU9XOgdeGq55SCZcvg\nqqtgt93MqLRvD48+aqsPu1FxHKcp5GNYloUmfWqS5HrFrVKyVGOM5c03a+nRwyY6Lltm+8xPnQqH\nHFIbO4S4HD5vkrrKXV6SuspdXpK6qk1errw48omxPCYidwA1InIWcAZwV4M1OSXn228tdvLqqzYn\nZbvt4M474YADLL8R3x/HcZzVyHc/loOBQ7AZ8s+r6gvFrlhSVEuMZcIE21d+2jRo0QIuusiWYlln\nnVLXzHGcSqSpe95fCDyqqrOz3lihNHfDsmIFXH89/OEPNumxc2d44AHbfMtxHKexNDV43xoYISKv\nici5ItK+sNUrLc05xjJzJhx0kA0b/v57OPdcGDcOttmmPOpXzrrKXV6SuspdXpK6qk1errw4choW\nVb1CVXfBFnvcDHhFRF5ssCYnUUaNshFfo0bBJpvAs8/CLbe468txnOKT91phYX+U44B+2CZguxWz\nYknR3Fxh338PAwbYhEewfeb/8Q8zLo7jOIWiSa4wERkgIqOAl4ANgbOai1Fpbnz3HRx7rBmVVq3g\nr3+F//zHjYrjOMmST4xlS+ACVd1FVS8Pe6M0G5pLjGXBAjj8cHjmGWjXzvZPGTCgYfvNl/vnTVJX\nuctLUle5y0tSV7XJy5UXR+w8FhFpo6oLCHumiEi7aH6mbX6d0vDVV7YUy4QJsNlm8MIL0KFDqWvl\nOE61km1r4mdU9UgR+RibdR9t+6qqbptEBYtNpcdYZs603Rw/+MA24XrxRdhmm1LXynGc5k6T5rE0\ndyrZsMyYYcOJP/sMdt0VRoywHovjOE6xaWrw/qV80iqVSo2xvPce/OIXtXz2Gey5J7zySn2jUur6\nFUNekrrKXV6SuspdXpK6qk1errw4ssVYWgHrAhuJSFvqXGFtAPfgl5CxY+HQQ2HrreHgg+GJJ2D9\n9UtdK8dxHCNbjOV84AJgc2A2dYZlAXCXqt6aSA2LTKW5wt5800Z/LVgAffvaUvdrr13qWjmOU200\nda2wX6vqLUWpWRlQSYbllVdswuPixXDccfDgg7DmmqWuleM41UiTYiyqeouI7Coix4vIKamj8NUs\nDZUSY3nhBeupLF4MJ58MDz0EixeXT/2SkJekrnKXl6SucpeXpK5qk5crL458gveXAbeEY3/gGmxH\nySYhIhuIyD9FZKqITBaR3iLSVkRGiMg0EXleRDaI3D9IRGaE+w+JpHcXkYkiMl1EboqkryUij4Qy\no0Vkq6bWuVSMGQM//rHNrD/zTLjnHmiZz046juM4JSAfV9gkoCvwjqp2DasbP6CqBzdJscg9wCuq\nereItATWA34PzFXVa0TkYqCtqg4Ukc7Ag8AewBbAi8AOqqoi8hZwrqqOFZFhwBBVfV5Ezga6qOoA\nETkBOEZV+2WoR1m7wp58Ek44wdYAO+ccuPlmWCOf9RIcx3GKSFOXzf9OVVcCy0WkDfAltsxLUyrU\nBthbVe8GUNXlqjof6AvcG267Fzg6nB8FPBLu+wSYAfQKC2O2VtWx4b77ImWish4HDmxKnUvBv/9t\nsZTvv4cLL7TVid2oOI5T7uTzmhonIjXYdsTjgQnA6Cbq3Qb4WkTuFpEJInKniKwLtFfVOQCq+gWQ\nWj6xAzAzUn52SOsAzIqkz6JuKPSqMqq6AqhNX5YGyjfGMnKk9VRWrIBrrqnluutWX/er3P2z7ksv\nnrwkdZW7vCR1VZu8XHlx5PTUq+qAcPo3ERkOtFHViQ3WtLre7sA5qjpORG4EBmJLx9RT30Q9UTJ2\n2cqRcePgqKNg2TLbnOvMMzMvJuk4jlOOZJsg2T1bnqpOaILeWcBMVR0Xrv+FGZY5ItJeVecEN9eX\nIX829d1vW4S0uPRomc9FpAVmEFdbOHPhwoUMHDiQVq1aAdCzZ0/69OlDTU0NNTU1q6x1TU0NQN7X\nKaL5+cjseDbbAAAgAElEQVSbOLGW3/0OFi2qoX9/uOKK2npGpaHyCl2/UsqLprm87M+32uTFXbu8\nwv0eR40axfDhwwFWvS/jyDZBcmSWcqqqB2SVnAMReQXb22V6GHm2bsj6RlWvjgne98ZcXC9QF7wf\nA5wHjAWeBW5W1eEiMgDYNQTv+wFHl3vw/rPPYK+9YNYsG1r81FM+T8VxnPIkW/AeVS3JgY00Gwu8\nCzwBbAC0w0Z8TQNGADWR+wcBHwJTgUMi6T2ASVhAf0gkfW3gsZA+BuiYqR7dunXTOObNm1fQvGxl\nPv54nu64oyqo7rWX6uLFTZNX6PqVg7wkdZW7vCR1lbu8JHVVm7xseWY+Mr/fc8ZY4iZDqup9eRi1\nWFT1PWz4cDoHxdw/GBicIX080CVD+lLg+KbUMSkWLICLL4Zp02yf+meegXXXzV3OcRynHMlnHkt0\nOZdW2LDdCar602JWLClK7QpbsgR+9CMbBbbddvD667DppiWrjuM4Tl5kc4XlMyrs12nCaoBHClS3\nqmb5cujf34xKaudHNyqO41Q6jZlutxibh9IsKNU8FlX41a9sZn1NDTzzTG3szo+VOgbe5ysUT16S\nuspdXpK6qk1errw48omx/Ie6+SRrAJ2xoLjTBAYNgqFDYZ114NlnbVthx3Gc5kA+MZZ9I5fLgU9V\ndVbc/ZVGKWIs110HF11kC0k+9ZTFWBzHcSqJgux5H9b3WtXD0QyTDSuRpA3LPffA6afb+QMPwEkn\nJabacRynYDR1z/tfiMgXwERgHLZe2LjspSqHJGMszz5by5ln2vmQIfWNSjn4U8tdXpK6yl1ekrrK\nXV6SuqpNXq68OPLZ1eMibAb71w2W7qzi1VfhiitsUck//AHOO6/UNXIcxykO+cRYnsf2Mvk2mSol\nSxKusK++gi5dYM4c+OUv4fbbfVFJx3Eqm6bued8duBtbFmVpKl1Vm0Wbu9iGRRWOPdb2Vtl3X3jp\nJWjRomjqHMdxEqGpG33dAbyEGZbxkaNZUOwYyz33mFFp0wb+9rfaWKNSDv7UcpeXpK5yl5ekrnKX\nl6SuapOXKy+OfGIsLVX1wgZLdvjoo7pYyq23+qx6x3Gqg3xcYX8GPgH+Q31XmA83zsKKFeb6euMN\n21740Uc9ruI4TvOhqTGWjzMkq6o2i7nixTIsgwfD739va4BNmgQbblhwFY7jOCWjSTEWVd0mw9Es\njAoUJ8Yydmwtl15q53ffXWdUyt2fWu7yktRV7vKS1FXu8pLUVW3ycuXFUbL9WJor330HV11lKxef\ney4cemipa+Q4jpMsvh9LgV1hF1xgs+p32gnGj/cNuxzHaZ4UZK2wiLAa4BFVPawQlSs1hTQsL70E\nBx1ki0uOGQM9ehRErOM4TtnR1Hks6fh+LBnyFi+Gs86y8xtuqM1oVMrdn1ru8pLUVe7yktRV7vKS\n1FVt8nLlxeH7sRSIyy6Djz+Grl3hxBNLXRvHcZzS4fuxFMAVNnYs7Lmnnb/1FvTsWYCKOY7jlDGN\n2vNeRLYH2qvqK2npe4nI2qr63wLXsyL5/ns480xYuRJ+9zs3Ko7jONliLDcBCzKkLwh5zYKmxliu\nvRYmTrStha+4Inu5cvenlru8JHWVu7wkdZW7vCR1VZu8XHlxZDMs7VV1UnpiSOvYYE0ZEJE1RGSC\niDwdrtuKyAgRmSYiz4vIBpF7B4nIDBGZKiKHRNK7i8hEEZkuIjdF0tcSkUdCmdEislUh6hxl2jS4\n8ko7v/NOH1rsOI4DWWIsIjJDVXeIyftQVbdvsnKR3wA9gDaqepSIXA3MVdVrRORioK2qDhSRzsCD\nwB7AFsCLwA6qqiLyFnCuqo4VkWHAEFV9XkTOBrqo6gAROQHbU6Zfhjo0KsayciXstx+89pptNfyP\nfzTyITiO41QgjR1uPE5Ezsog7EwKsGy+iGwB/Aj4eyS5L3BvOL8XODqcH4XNnVmuqp8AM4BeIrIp\n0FpVx4b77ouUicp6HJvYWTDuusuMSvv2cN11hZTsOI5T2WQzLBcAp4vIKBG5PhyvAD8Hzi+A7hux\nbY+j3YX2qjoHQFW/ADYJ6R2AmZH7Zoe0DkB0hNqskFavjKquAGpFpF16JRoTY5k9G+67z/JuuQXa\npUmtVH9quctLUle5y0tSV7nLS1JXtcnLlRdH7Kiw8IL/oYjsD+wakp9V1ZcbrCUNETkCmKOq74rI\nflluLeSywxm7bG3atGHgwIG0atUKgJ49e9KnTx9qamqAuoeaup43r5bBg+Hbb6FvXzjooFpqa6l3\n/6JFi2LLx12nyJTv8uryFy1a5PJyXFebvGzP1+UV7vc4atQohg8fDrDqfRlHg5d0KQRhj5eTsXkx\n6wCtgSeBnsB+qjonuLlGqurOIjIQW6r/6lB+OHAZ8GnqnpDeD9hXVc9O3aOqb4lIC+B/qrpJWlUa\nHGN58knbarhNG5gyBTp0yF3GcRynuVHoJV2ajKr+XlW3Csvv9wNeVtWfYZuJnRZuOxV4Kpw/DfQL\nI722AbYH3g7usvki0ktEBDglrcyp4fw4oMk9rUWL6naE/POf3ag4juNkoiSGJQt/AQ4WkWlYsP0v\nAKo6BVtGZgowDBgQ6WacAwwFpgMzVHV4SB8KbCQiM7B40cBMChsSY7nySpg1yyZB9utXG1Oqcv2p\n5S4vSV3lLi9JXeUuL0ld1SYvV14c+ex5X1TCzP5Xwvk3wEEx9w0GBmdIHw90yZC+FDi+UPV8/324\n8UbbXvj226FFi0JJdhzHaV6UJMZSTuQTY1m50vavf/11GDAA/vrXhCrnOI5TphR0P5bmRj6G5Z57\nbBJk+/bwwQcQBkw4juNULWUXvC8ncsVY5s6Fiy6y6+uvrzMq5eD/rDZ5Seoqd3lJ6ip3eUnqqjZ5\nufLiqHrDkotBg+Drr2H//aF//1LXxnEcp/xxV1gWV9jo0fDDH8Kaa9oKxjvtlHDlHMdxyhR3hTWC\n5cvh7LPt/KKL3Kg4juPkS9UblrgYy623gkgtHTvCJZesnl8O/s9qk5ekrnKXl6SucpeXpK5qk5cr\nL46qNyyZWLkSrr7azm++2fdZcRzHaQgeY8kQYxkzBn7wA9h6a/j4Y5sU6TiO49ThMZYG8vTT9veo\no9yoOI7jNJSqNyyZYixPhWUsjz66vP2f1SYvSV3lLi9JXeUuL0ld1SYvV14cVW9Y0vnwQ1sOf4MN\nYLfdSl0bx3GcysNjLGkxlhtvhAsvhH794OGHS1gxx3GcMsZjLA0g5Qbr27e09XAcx6lUqt6wRGMs\nc+faCsYtW8Jhh5W//7Pa5CWpq9zlJamr3OUlqava5OXKi6PqDUuU556DFStgv/18BWPHcZzG4jGW\nSIzluOPg8cdtUuSvf13iijmO45Qxvh9LFlKGZelS2Ggj29f+k09scqTjOI6TGQ/eZyEVYxk50oxK\n1651RqXc/Z/VJi9JXeUuL0ld5S4vSV3VJi9XXhxVb1hSRGfbO47jOI3HXWEiunKlsuWWMHs2jBsH\nPXqUulaO4zjljbvCcjBhghmVzTeH7t1LXRvHcZzKpuoNS7du3WIXnSx3/2e1yUtSV7nLS1JXuctL\nUle1ycuVF0dJDIuIbCEiL4vIZBGZJCLnhfS2IjJCRKaJyPMiskGkzCARmSEiU0XkkEh6dxGZKCLT\nReSmSPpaIvJIKDNaRLaKq0/KsPhse8dxnKZTkhiLiGwKbKqq74rI+sB4oC9wOjBXVa8RkYuBtqo6\nUEQ6Aw8CewBbAC8CO6iqishbwLmqOlZEhgFDVPV5ETkb6KKqA0TkBOAYVe2XoS4Kyvrrw9dfw9pr\nJ/IIHMdxKpqyi7Go6heq+m44XwRMxQxGX+DecNu9wNHh/CjgEVVdrqqfADOAXsFAtVbVseG++yJl\norIeBw7MVqdDD3Wj4jiOUwhKHmMRkY5AN2AM0F5V54AZH2CTcFsHYGak2OyQ1gGYFUmfFdLqlVHV\nFUCtiLRL15+ax5LJDVbu/s9qk5ekrnKXl6SucpeXpK5qk5crL46WDS5RQIIb7HHgfFVdZG6pehTS\nT5exy9amTRs23XQgkya14vLLoWfPnvTp04easFhY6qGmX6fIlL9o0aKc5V1e4+QtWrTI5eW4rjZ5\n2Z6vyyvc73HUqFEMHz4cgFatWpGNks1jEZGWwDPAc6o6JKRNBfZT1TnBzTVSVXcWkYGAqurV4b7h\nwGXAp6l7Qno/YF9VPTt1j6q+JSItgP+p6iYZ6qH77quMGlX8z+w4jtNcKLsYS+AfwJSUUQk8DZwW\nzk8Fnoqk9wsjvbYBtgfeDu6y+SLSS0QEOCWtzKnh/Djg5biK+Gx7x3GcwlGq4cZ7AScBB4jIOyIy\nQUQOA64GDhaRaViw/S8AqjoFeAyYAgwDBkS2fTwHGApMB2ao6vCQPhTYSERmABcAAzPVpVu3bvzk\nJ5nrWe7+z2qTl6SucpeXpK5yl5ekrmqTlysvjpLEWFT1DaBFTPZBMWUGA4MzpI8HumRIXwocn099\nfCVjx3GcwuFrhaXtee84juPkplxjLI7jOE4zpOoNS3TP+3TK3f9ZbfKS1FXu8pLUVe7yktRVbfJy\n5cVR9YbFcRzHKSweY/EYi+M4ToPxGIvjOI6TGFVvWDzGUjnyktRV7vKS1FXu8pLUVW3ycuXFUfWG\nxXEcxyksHmPxGIvjOE6D8RiL4ziOkxhVb1g8xlI58pLUVe7yktRV7vKS1FVt8nLlxVH1hsVxHMcp\nLB5j8RiL4zhOg/EYi+M4jpMYVW9YPMZSOfKS1FXu8pLUVe7yktRVbfJy5cVR9YbFcRzHKSweY/EY\ni+M4ToPxGIvjOI6TGFVvWDzGUjnyktRV7vKS1FXu8pLUVW3ycuXFUfWGxXEcxyksHmPxGIvjOE6D\n8RiL4ziOkxjN3rCIyGEi8oGITBeRi9PzPcZSOfKS1FXu8pLUVe7yktRVbfJy5cXRrA2LiKwB3Aoc\nCuwCnCgiO0XvWbhwYWz5119/vaB5Lq9ydJW7vCR1lbu8JHVVm7xceXE0a8MC9AJmqOqnqvo98AjQ\nN3rDf//739jC48aNK2iey6scXeUuL0ld5S4vSV3VJi9XXhzN3bB0AGZGrmeFNMdxHKdINHfDkpP2\n7dvH5i1ZsqSgeS6vcnSVu7wkdZW7vCR1VZu8XHlxNOvhxiKyJ3C5qh4WrgcCqqpXR+5pvg/AcRyn\niMQNN27uhqUFMA04EPgf8DZwoqpOLWnFHMdxmjEtS12BYqKqK0TkXGAE5vYb6kbFcRynuDTrHovj\nOI6TPFUfvHccx3EKixsWJycismmp6+A4TuXghgUQkc1EZO1GlLs//D2/CbrbikgvEdkndYT09iJy\nZDg2idy/aVr5nHXPlN/Azzss3xszPYtcz0dEjhOR1uH8DyLyhIh0b0D9yg4RaSEiDxZY5v35pGW4\nZ6+4tKZ8N0SkjYi0Sx35lCk0IrJuKfQ2tg5ibNlIPa0acG87Efm9iFwoIm2y3LeOiOyYJb9xz1dV\nq/4AXgQ+Bm4DhgLPhfTOwM+zlJsCdAXeA9oC7SLHQmBB3BHKnwlMAuYBI4HvgJeB44FPgXuB+0Ld\nfhrKPBtT9+vC9Q+B/sApkWNChrpPCOU+At7K8XzeyZB2DdAGWBN4CfgKODlG14qY55B6RhPDfX2A\nUcAR0ToBewHrhfOTgRuArYFOQff7IW834A9xzyFbvUPe+SFPwvdgAnBI+N+8DDweqVPc/3dh5P/7\nOrBWhucRp+fC9CNSZrVniw2+mRLOnwjPbY1M/+u4tGx5kes7065/CXwBfBK+Q6nvUQ1wXvj/3Jw6\nQpn2xPy2gLXD/+r3wKWRY80g7/Fw/BpYM/L/nQJ8Fq67AreF84zfC+r/JlLHdzH/x+jvNE5ebB3C\n9UsZnu1LwKSY31ns9zlcfwi8Afwl/K83iOSlf9+nAH8GrgcmA9tm0PdjbNTsx+G6G/B0ruebz9Gs\nR4Xli6oeJCICvArcAlwSsqYDj2I/iEz8jfDyAMZH0gX4SlW3FZE/YUOd7w/pJwGbhfvOB/YAxqjq\n/mEdsz8H/Xuo6pcAIrIxZkAeV9UjYureObRetwPexV7m64ZjHRHZPegHe6mtq6rb5PmI7sqQdoiq\n/p+IHIO9YB4E/gqsFJGnI/e1Bkap6oFxwkXknXB6BPYSe1ZErorccjvQVUS6Ar8F/o4ZXICLgDsA\nVHWiiDwUWmDR5wCgoUx6vY/F/u8PAGeo6hARORRrKPwM+78dE8qnZKGqreM+T4SPgDfC81gcST81\nRs9TMc9nEHAZ0FJEFkSyvgfuDOe3AacDN4vIP4G7sQbOD4GNReTCSLk2wNoi0oOY70ZaFfZIu/4d\nsKuqfp1WzzeBMVhjaWVamXtCnTL9tp4C5mO/oaWRMrdjxuW2cP2zkHYmcCO2BuDTAKr6Xqq3j31f\nV/teYA2EFK2waQjPqupPc/xO4+T9OFMdQs9iXWAjEWlL/WfbAXhLRPZQ1bFpzyhOz1XhensR2QrY\nG/ut/FVEasPzTv++b6KqvwcQkRHAK+He3wJnqurxwOXYslejgvx3RST1Tsj2fHPihiWgqioirVT1\nsfBDRlWXi8iKLGVuxn7It2NGJvXgX1XV98L5UaraNVLsdhF5D2uRLVHVJSKCiKytqh+El+LKlFEJ\nzCWL21KtSTFZRHoCncM1InIqcBqwBdaKTLEQax3mhareliE59d05AvgnMBVr/X+FtZKiuibmUDFb\nRO4ADgauDq6Y6OddHv4/fYFbVXWoiPwcWKGqb5tdrbsXqPccstVbVedHyqdOfgTcr6qTg9EehRmW\nr4DeYK6GbB9IVb8B/huONTADm1WPql4RI2swMFhEBmM9rk7Yi5FQL1T1ReBFEdkAOBFriMwHZoTP\nHNW/AOsNX0d+340v064/Ar7NUNVWqnphhnSAjbL8trbQMIk5ioi8l/bbeTn8dggyZqb971Py1s30\nvVDVX6fJr8HWD4Tsv9OM8rLU4ZfABcDmWG80xQJsUdxzgZNF5BOswSHY/3FpnJ5Q3y2w3vveWA9i\nMtawPYW077uIdBeRjqr6iao+HwzS5ph3ZFK47fu07z+hHmT5bHnhhqU+i0VkQ8LDFZu5Pz+Pch9g\nLd4nsC/J/SJyl6reEmSehH2BFfvRp1qvs8KX+9/ACyIyD3OBvS8izwMPh/tOIL84x/vApljLC1W9\nF7hXRH6iqv/Ko3xDeEZEPsBcCWdjbpC5qvqDRsg6HjgMc+fVishmWMstxcLwQjoZ2Eds1eo1gTki\nsh11/6+fYp99EZHnkK3eoTeYWrNifGjdbQMMEov7rIzp2Y0PeqO/vNS1Yq6HK0K91gdQ1UXhumMm\nPXk8p4+w3tUWWOt0T2A0cECQuyHWqj8ZeAfrRfYBPokxWtfk+d3YOO16EDBaRMZQv4fxoIicBTwT\nTQ9GNttv600R6aKqk6jPChHZTlX/G8psS93LbaaI/BBQEVkT6/2n5qh9HfO9SGcx9j+A7L/TOHmL\nM9VBVYcAQ0Tk1+EdUA8R+Q/WU907JL0K1AJ/y1Hvz4CxwJ9V9VcRed1Z/ft+BuZJAVY1PmeHy1Sj\nYLKI9AdaiMgOmNvxzZCX7fnmxOexRAj/oFuAXbGX9MZYbCNri1tEJgI/UNXF4Xo9YLSq7iYiHYEh\nWEtDMR/pBar6SZqMfYENgOHAn4C3sJcCwGvAnqq62n4yaTJGYn7St6n/wz5KRI7Atg5oFUm/Mpu8\nXIRW+3y1iahvYm6lGURaPYQXrarGBhDz0LMp5j8eq6qvhdbXflhr7U7M3TMP+2wTsAZTxueQod7r\nAm1U9YtgsLphRmttYCOgQ6aXQ4bnsAP1n+0rIrIr5lpJ9W6+xlqXU4Oej4Ih3TDoyfU9m0Sd67Sb\nBNepqh4rIk8COwZ9d6vqF5FyC4DVlqhV1QNCw+ZS6nrbrwBXqur8SPl3VHX3yPVY7DuZ7vJqDfw/\n7H+R+g5ocAmnflu7YC3tVb8tEZkSnt9H2P8rZZwvwFxoHwVZHYHTVXWkiGyE/a4OCvePAM5X1bnB\nAEW/Fx9jxvaWSL1aADsDj6nqwGy/0xh5J2GGJ2MdwnM6Jf2ZB9pi7rxUQ/RozA32bCY9qvppkNcV\neyfsA2yFNTDmhntjv+9xhO/+JVh8D+B54E+qujTb880mc5VsNyz1EZGW2A9UgGlqy+3nKjMJi4ks\nCdetsJdgl0bWYYKqdk9Lm6iqu+Uot29M1omYz3d/LD7xU+BtVf15I+p2gKq+LCLHZspX1ScaKrOx\nBJfZT7EXTjvsB5uKpWSq2yuh3K5Y8DhqCO4TkTOxllm9HoGqHpClDpnKvKmqBwZje4mqjgz3ngL8\nCnOFZKrfhEzpEV1jVXUPEXkX6B1eAJNVdRcRORx7ae+FvexfB24PrtYeETGtgJ9grqH/E5F/YY2o\ne0P+z4CuqnpsRO+AqDs03dBE0j8Cemla7CXktQqf+1DM3TYauCXUb2syt+B7YS+7jtjL9wfY88z6\nnCI618MGMywM19Hfx3LgU1WdlYecFqERskqe2HJR56nqjVnKRRskqZjOBMyVuVpDFLgquAvr1TtN\n5vqYcdkbSP1+T8ikP/V9z1K/nphh6Uid90pDg7hd6GlG799GVT/OJnPVvW5Y6hO6fx2JuAlVNeOL\nKlLmQuBU4MmQdDRwj6reFFwtZ2WQeUYGOWcDA4BtMd98itbAG6p6csM/UZ1RivxdHxuds3fOwqvL\nukJVLxORu8ncM1ntczUWEXldVfuIyMJMurBuey32Y436fzdJ792JyNWqerGIXIb1djpj7sXDgdfV\nArixPYIsdczWi6gXIxCRO7EYzTcZRGk2AxbKP4kF6C/A3F/zsFFSPxKRxzAffmqIc3+gRlWPi5H1\ntqr2EpF3VbVbWt5qaWn5f8YGPvyH+q6wR4CjVXW1+Eu2+okNR8/Ugj8rfF/7YL3467Bg/2NxdVPV\n80KD4yes/pu7UkTaUzcY4W2tGyDTCntRp/fqzxCRzzBPwqPAy8GttMrQx9UlwzNIxXQ6kKEhisVY\nemYpPw7rSb+J9RhfU9VPxQLu/4vIWwdon+4VySBvGjYQ430iPc8g8w3gcFVdEO7dGYtJ7prXZ3XD\nUoesPqoK7Ad/Xh5luxNxXanqOyE99SUYT/1RRav5tcUCr22BwcDASNbC9NZDWrlcL+CpqtpbzCd+\nLNZ9nqyq2+f6XFl0plq+Hanf2mmSe62BdXg/0xc9W48vGIKu2BDqruFF84CqHpytR5ClDtl6EU9i\nRi811+RkoIeqHlOAz77Kdaqqy0Rkiqp2Trtniqp2lvoDDdbABjcMUdUdRWQ0cJGqvh7K7IXFumJj\nZSKSqdWq2LD7XbDRV1GXzHk56pfRlYwNzthdbNDCJFV9SEQ+xVx3GVHVe0VkOHWjzKINjpnAtdhg\nDMFa/Rep6uNiI+k+wAzelZira6qqnh9cRkcC/YDuWAzpEez7vyZmcFaN+ovrUYnFKt7HRn2t1hDF\n4iRfZ5D3TSi/sap+lUHuOOCHqrosXK+FNUSzGj0ReUNVV5vjFPKOAP4PG+SyI+YFOElV380mM4UH\n7+uTbTRRVsKXKdMXat301nMWGfOxH8SJDdTdJ/zNOARWRP4YWkvXhjoq5hJrCv+mrreQCn4n3Uqp\nF/SN9vjCyypFa8xnDjYSb6WILBebOPYlkJqwFjeYIhuZytSEvNcww5tyD76KBVUb1TOOksHNMUFE\n9lTVMUF+b+riKqmBBmAuoE+oc6OcjQ3w2CBcz8Neetl0ZxymLjYK8d8xxbLVT6hvAFaEtEyjBWvV\nBqVkI3aUGTHD+IHtQ++pbzBOD2H/P0IP7DHgMbHhw0OwWNSrQXS0MaXUDab4D3XPfQ2sl/yYqt4g\nIqOoa4ierqrvRAz2OWnytg3ny0TkBtLiYUDLlFEJ9V0WjEsuLheRoeEZRBsCT6gN+V8Ti620Bo5R\n1el5yATcsKRTb1RVgXhGRH6kqnnPXi80qvqncPovEXkGGxaaz2i3bGT88SZB6HUo9v09Xcy3vxQL\nyK6Bjb2P6/GNDYbgLuyFuwhrHRPpSVwuNhAiNZgilpgyO4jI5tgLen/qeo6h+pl7xsTEhrIReRZr\nYob2s3C9NdYCB3uhDcBeZIq9MFMv9anYEObtMIM4H2tBrzaQQHLH1+4NL7ROIWkaZlB+m6N+d2Nz\nO6It+KFYIDvjaMFgFC5m9VjZAcSPMltD44fxp2KptWIxuC+A6IoX+2KxjMPCszs+k9chjesi5/Vi\nOpkaonEGO8I/sHfU8eH6Z9iz+0pEjlLVp0Nd+2I9n1ychvVGWlLnCustIvtF7tkAc8ufKyLk470B\nd4UB9VoWrWnE6IocshcC6wV531OAUVKNrEeTWsgZ5N2JBV/Tf7xFRyzYm4n1MUOxWtATzKUgIg9g\nLb3XsJ5WG80xGqsR9TsP6wlsS90QT6gzMEtpZM84g664ZwGs8pdni28MJ0OcSlWvT5cl9eNrEDGW\n1BnGe7EekWA9wf/Dfk+x9QuyM7qS4xAbrv0oFiP4FWbEv1KLo8WNMhuOuUGjw/gnhjJnAv8CumBu\nqfWBP6rqHWLzTd7Bei1PR1x27bEJzZur6uEi0hlz6a02oVpslNXcbP/z4HK7ENhKVX8hNgR4R1V9\nJuRnjIdhLrkHsXkqgrn8TlHVD3M8w2mqumNaWq7eaq7eoslxw7KqNSLA1dgPYVUWcLWq9m6i/IzD\nUZsis4H6Gx07yiAr2ltY7cerOUauFRMReUZVjwwuhdXmmKgNe90f863vjT2Td7AJrUOKUJ/bVfXs\nDOn/xEYUFbJnnK0e2eIbGeNUOeRljK8BfYH+qjot3NcJeFhVe2SS0xREZLyq9pDIaEmpi3fFjTLr\ni710U+mvqeqToWw04L9m6jOpBfzbaAhip9XhOcJqAmrxupbY9+ksbNmVb7BBB/djQ9fXwF74GXvB\nIvIo1os+RVV3DYbmzZQxkRzxMEmbL5XHM7wbuFZVp+Rzf0NwVxj1hqGumf7CFxth0WgkZjgqNvQw\nKfYbZpcAAAdYSURBVBodO8rAkQWQURRUNVW3Nwi9ElX9IO2ekSLyKjYyaH+stbsL5jcvdH3qGZW0\nnvEUESlYzzgH2eIbcW6jbMTF19ZMGRUAVZ0e/PTFIOW6+p9YoPlz6uYLHU39UWb3Y67PTbBJgBMw\nt9LzEXlxy8qAxTbOIW3EGPGrCdyKrV6wAbbG3OGqOkZsxODDxLtXt1PVE0TkxCDvW5F6U9/T42EA\nR0n95XpIFVHV6IoKmdgTeDc0xFKNwy1VtSbSgKxHvg1HNyzkHfRtLHHrgSVJwWJHKddFmTMUa5Xe\nIjaTeQJmZIaIyEuYa3I05g5bFcxNgOuo6xkfHUlPpRWUPOMvfYDT0l4uuXqeccHxXUXk79gqFGAj\nq1abmFkgrgov2N9iEx/bAL8JeT/HJhSnXFZXUzdh+Y/YhMDTgVuDm3Bo3GcK3I89r0OJjBgjfjWB\nDVR1REi7MmXQ1ZZsyvaZloWGbEredtQ3cunxsO2x71FWoVnI9HlTqyw0qQHphsV4CHiOBg7zzZO4\n9cCKTglbyCUlpleyK9YrmQj0CNfzsWDtaFX9LoF6Fa1nHEM+L4fDGyE3rpdzNjaiKeVifY26BSQL\nSirugP0P90/LjhtllloT8AssOL8cc5k9DizP0nOLGzE2ABsosp3YvI+NsQm790TKpn+vsnkNLsN6\nM1uKbbmwFxZgT/EUdT3F2eHIGA/Lh5hG4qdZ8vLGYyxFRrJMaktAd1FjR+VKhl7J6+m9ErH1uU7D\ngr+bqmqD9+NpRL2KMgE2KXLF17C5JiclVJfYiccSM2E51PEUbMTU3zGXXmr4/U7hc6wWM5S6yaSv\nYv+/L7DJldtKhpU6gjsstbjkOtStzSXYiMyM7sEwsGQiZoxS21l8HcmPm7eV9yTsXMjqc+FWZdGA\nQUfeYyky2oghrAXUnXQLuVyI7ZWIyLmYm6wHNnrpH4T5CglQzJ5xEuTqAT0oImtpZE5FEXkK+7+9\nSNqquxo/T+QK4Nhoa1xEUp9pe2y/k0zcKTZ/5Q9YD2V94I8hrxd1L/TuYkNyWzTyM6VcuAcTBpaI\nSHRgSVxPMfZZNBTNbzuInHiPpRlT6S3kppKpVyIivyOshKCqy7OVdxqGiNyHLexYb/+ZPILIjdGV\nddmZAuvKOGIM67UVZLRlRFcL6rtwv1PVnULeFMwA1ouHYStwJ/Is8sUNSzNGGrlETKWToVeSWlfp\n5VLWq7kiIver6s/ENpJabVFGjdlnpok6r8KG4hZ94rHELxFzJoUbbZnThSvxc5bOIqFnkS9uWJxm\nh/dKkiW0pA/CXLz7pecXshGTFgNYH2u5p/7HeccAGqgzLrZR0PlIInIj1hhaio1GfRUbzZZxYEkp\nnkW+uGFxHKdJSN1KA9tg80lWZREmphZB5wPYi/c1Vc17A6pG6qq3yoQUcaWOIL9BA0uSfBb54obF\ncZyCIDErDRRJV/oKCqvmKhVQR9wouPVD+tcUcLRlY124STyLhuKGxXGciiRboLtA8rOuwwY8qY3Y\nkC+Lvka7cIv9LBqKGxbHcSqOfOYqFVF3WY22LOWziMPnsTiOU4mUbAUFym8+UimfRUa8x+I4TsVS\nihUUypVyehbeY3Ecp+Io8QoKZUU5Pgs3LI7jVCKtgBvwuUpQhs/CXWGO4zhOQVkj9y2O4ziOkz9u\nWBzHcZyC4obFcRzHKShuWByngIjIJSLyvoi8JyITRGSPIuoaKSLdc9/pOMnio8Icp0CEPc9/BHRT\n1eUi0g5Yq8TVcpzE8R6L4xSOzYCvU0M+VfUbVf1CRP4oIm+JyEQR+Vvq5tDjuEFExorIFBHZQ0Se\nEJFpIvKncM/WIjJVRB4I9zwmIq3SFYvIwSLypoiME5FHRWTdkP6X0IN6V0SuSeg5OFWOGxbHKRwj\ngK1E5AMR+auI7BPSb1HV3mFxwnVF5IhImaWqugfwN2yL2V8BXYDTwna4YHuq36qqnYGF2DpVqxCR\nDbFtcw9U1Z7YhlQXhh7T0aq6a9hh8KqifGrHScMNi+MUCFVdDHQHfgF8BTwiIqcAB4jIGBGZiK0+\nu0uk2NPh7yRgkqp+GfaM/y+wZcj7TFXHhPMHqNvLPcWeQGfgDRF5BzgF2ApbN+o7Efm7iBwDlGzt\nKKe68BiL4xSQsE3tq8CrYT+PX2I9kB6q+rmIXIbNlE6R2iBqZeQc6vYByagm7VqAEap6UvqNItIL\nOBA4Djg3nDtOUfEei+MUCBHpJCLbR5K6AR+E829EZH3gp40QvZWIpDaP6s/q60CNAfYSke1CPdYV\nkR1EZD2gRlWHAxcCjdonxHEaivdYHKdwrA/cIiIbYHuPf4i5xeYD7wP/w7axTZFtPaVo3jTgHBG5\nG5iMxWNW3aOqX4vIacDDIrJ2SP8DFo95KhLs/03jP5rj5I+vFeY4ZUzYxfAZVe1S6ro4Tr64K8xx\nyh9v/TkVhfdYHMdxnILiPRbHcRynoLhhcRzHcQqKGxbHcRynoPz/9upYAAAAAGCQv/UkdpZEYgFg\nJRYAVmIBYBVVMHLi6uW5gAAAAABJRU5ErkJggg==\n",
+      "text/plain": [
+       "<matplotlib.figure.Figure at 0x12418e50>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "fdist1.plot(50,cumulative=True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "#define function that will calculate most common words in each text and looping over library top 15 tokens in each text\n",
+    "def common_words(text,top):\n",
+    "    freqdist=FreqDist(text)\n",
+    "    #freqdist.plot()\n",
+    "    return freqdist.most_common(top)\n",
+    "    #return freqdist\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 99,
+   "metadata": {
+    "collapsed": false,
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<Text: Moby Dick by Herman Melville 1851> [(u',', 18713), (u'the', 13721), (u'.', 6862), (u'of', 6536), (u'and', 6024), (u'a', 4569), (u'to', 4542), (u';', 4072), (u'in', 3916), (u'that', 2982), (u\"'\", 2684), (u'-', 2552), (u'his', 2459), (u'it', 2209), (u'I', 2124)]\n",
+      "<Text: Sense and Sensibility by Jane Austen 1811> [(u',', 9397), (u'to', 4063), (u'.', 3975), (u'the', 3861), (u'of', 3565), (u'and', 3350), (u'her', 2436), (u'a', 2043), (u'I', 2004), (u'in', 1904), (u'was', 1846), (u'it', 1568), (u'\"', 1506), (u';', 1419), (u'she', 1333)]\n",
+      "<Text: The Book of Genesis> [(u',', 3681), (u'and', 2428), (u'the', 2411), (u'of', 1358), (u'.', 1315), (u'And', 1250), (u'his', 651), (u'he', 648), (u'to', 611), (u';', 605), (u'unto', 590), (u'in', 588), (u'that', 509), (u'I', 484), (u'said', 476)]\n",
+      "<Text: Inaugural Address Corpus> [(u'the', 9281), (u'of', 6970), (u',', 6840), (u'and', 4991), (u'.', 4676), (u'to', 4311), (u'in', 2527), (u'a', 2134), (u'our', 1905), (u'that', 1688), (u'be', 1460), (u'is', 1403), (u'we', 1141), (u'for', 1075), (u'by', 1036)]\n",
+      "<Text: Chat Corpus> [(u'.', 1268), (u'JOIN', 1021), (u'PART', 1016), (u'?', 737), (u'lol', 704), (u'to', 658), (u'i', 648), (u'the', 646), (u'you', 635), (u',', 596), (u'I', 576), (u'a', 568), (u'hi', 546), (u'me', 415), (u'...', 412)]\n",
+      "<Text: Monty Python and the Holy Grail> [(u':', 1197), (u'.', 816), (u'!', 801), (u',', 731), (u\"'\", 421), (u'[', 319), (u']', 312), (u'the', 299), (u'I', 255), (u'ARTHUR', 225), (u'?', 207), (u'you', 204), (u'a', 188), (u'of', 158), (u'--', 148)]\n",
+      "<Text: Wall Street Journal> [(u',', 4885), (u'the', 4045), (u'.', 3828), (u'of', 2319), (u'to', 2164), (u'a', 1878), (u'in', 1572), (u'and', 1511), (u'*-1', 1123), (u'0', 1099), (u'*', 965), (u\"'s\", 864), (u'for', 817), (u'that', 807), (u'*T*-1', 806)]\n",
+      "<Text: Personals Corpus> [(u',', 539), (u'.', 353), (u'/', 110), (u'for', 99), (u'to', 74), (u'and', 74), (u'lady', 68), (u'-', 66), (u'seeks', 60), (u'a', 52), (u'with', 44), (u'S', 36), (u'ship', 33), (u'&', 30), (u'relationship', 29)]\n",
+      "<Text: The Man Who Was Thursday by G . K . Chesterton 1908> [(u',', 3488), (u'the', 3291), (u'.', 2717), (u'a', 1713), (u'of', 1710), (u'and', 1568), (u'\"', 1336), (u'to', 1045), (u'in', 888), (u'I', 885), (u'he', 858), (u'that', 841), (u'his', 765), (u'was', 716), (u'you', 580)]\n"
+     ]
+    }
+   ],
+   "source": [
+    "for text in library:\n",
+    "    print text, common_words(text,15)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 105,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "fdist2=FreqDist(len(word)for word in text1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 106,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fdist2.max()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 107,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "Counter({1: 47933,\n",
+       "         2: 38513,\n",
+       "         3: 50223,\n",
+       "         4: 42345,\n",
+       "         5: 26597,\n",
+       "         6: 17111,\n",
+       "         7: 14399,\n",
+       "         8: 9966,\n",
+       "         9: 6428,\n",
+       "         10: 3528,\n",
+       "         11: 1873,\n",
+       "         12: 1053,\n",
+       "         13: 567,\n",
+       "         14: 177,\n",
+       "         15: 70,\n",
+       "         16: 22,\n",
+       "         17: 12,\n",
+       "         18: 1,\n",
+       "         20: 1})"
+      ]
+     },
+     "execution_count": 107,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fdist2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 108,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[u'RESPONSIBILITIES',\n",
+       " u'antiphilosophists',\n",
+       " u'constitutionally',\n",
+       " u'contradistinction',\n",
+       " u'discountenancing',\n",
+       " u'disqualification',\n",
+       " u'enthusiastically',\n",
+       " u'instrumentalities',\n",
+       " u'internationality',\n",
+       " u'irresponsibility',\n",
+       " u'misappropriation',\n",
+       " u'misrepresentation',\n",
+       " u'misunderstanding',\n",
+       " u'responsibilities',\n",
+       " u'sentimentalizing',\n",
+       " u'transcontinental',\n",
+       " u'uncharitableness',\n",
+       " u'unconstitutional']"
+      ]
+     },
+     "execution_count": 108,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "vocab=set(text4)\n",
+    "long_words=[word for word in vocab if len(word)>15]\n",
+    "sorted(long_words)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 109,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['call', 'me', 'Ishmael', 'Please']"
+      ]
+     },
+     "execution_count": 109,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sent1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 110,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['The',\n",
+       " 'family',\n",
+       " 'of',\n",
+       " 'Dashwood',\n",
+       " 'had',\n",
+       " 'long',\n",
+       " 'been',\n",
+       " 'settled',\n",
+       " 'in',\n",
+       " 'Sussex',\n",
+       " '.']"
+      ]
+     },
+     "execution_count": 110,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sent2\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 111,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['In',\n",
+       " 'the',\n",
+       " 'beginning',\n",
+       " 'God',\n",
+       " 'created',\n",
+       " 'the',\n",
+       " 'heaven',\n",
+       " 'and',\n",
+       " 'the',\n",
+       " 'earth',\n",
+       " '.']"
+      ]
+     },
+     "execution_count": 111,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sent3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 112,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Fellow',\n",
+       " '-',\n",
+       " 'Citizens',\n",
+       " 'of',\n",
+       " 'the',\n",
+       " 'Senate',\n",
+       " 'and',\n",
+       " 'of',\n",
+       " 'the',\n",
+       " 'House',\n",
+       " 'of',\n",
+       " 'Representatives',\n",
+       " ':']"
+      ]
+     },
+     "execution_count": 112,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sent4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 116,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "More than Four==> Fellow\n",
+      "Four or more==> Fellow\n",
+      "More than Four==> Citizens\n",
+      "Four or more==> Citizens\n",
+      "More than Four==> Senate\n",
+      "Four or more==> Senate\n",
+      "More than Four==> House\n",
+      "Four or more==> House\n",
+      "More than Four==> Representatives\n",
+      "Four or more==> Representatives\n"
+     ]
+    }
+   ],
+   "source": [
+    "for word in sent4:\n",
+    "    \n",
+    "    if len(word)>4:\n",
+    "        print 'More than Four==>',word\n",
+    "    if len(word)==4:\n",
+    "        print 'Exactly Four==>',word\n",
+    "    if len(word)>=4:     \n",
+    "        print 'Four or more==>',word\n",
+    "        \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 118,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Citizens', 'Fellow', 'House', 'Representatives', 'Senate']"
+      ]
+     },
+     "execution_count": 118,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "vocab=set(sent4)\n",
+    "long_words=[word for word in vocab if len(word)>4 ]\n",
+    "sorted(long_words)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 119,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "fdist5=FreqDist(text5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 120,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<bound method FreqDist.freq of FreqDist({u'.': 1268, u'JOIN': 1021, u'PART': 1016, u'?': 737, u'lol': 704, u'to': 658, u'i': 648, u'the': 646, u'you': 635, u',': 596, ...})>"
+      ]
+     },
+     "execution_count": 120,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fdist5.freq"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 124,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "innocent\n",
+      "seriously\n",
+      "#14-19teens\n",
+      "anything\n",
+      "together\n",
+      "remember\n",
+      "tomorrow\n",
+      "listening\n",
+      "actually\n",
+      "........\n",
+      "Question\n",
+      "computer\n",
+      "everyone\n",
+      "((((((((((\n",
+      "#talkcity_adults\n",
+      "football\n",
+      "something\n",
+      "cute.-ass\n",
+      "watching\n"
+     ]
+    }
+   ],
+   "source": [
+    "words=set(text5) #No duplicates\n",
+    "for word in words:\n",
+    "    if len(word)>7 and fdist5[word]>7:\n",
+    "        print word"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 125,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[u'#14-19teens',\n",
+       " u'#talkcity_adults',\n",
+       " u'((((((((((',\n",
+       " u'........',\n",
+       " u'Question',\n",
+       " u'actually',\n",
+       " u'anything',\n",
+       " u'computer',\n",
+       " u'cute.-ass',\n",
+       " u'everyone',\n",
+       " u'football',\n",
+       " u'innocent',\n",
+       " u'listening',\n",
+       " u'remember',\n",
+       " u'seriously',\n",
+       " u'something',\n",
+       " u'together',\n",
+       " u'tomorrow',\n",
+       " u'watching']"
+      ]
+     },
+     "execution_count": 125,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fdist5 = FreqDist(text5)\n",
+    "sorted(w for w in set(text5) if len(w) > 7 and fdist5[w] > 7)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 126,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['29', '61']"
+      ]
+     },
+     "execution_count": 126,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sorted(number for number in sent7 if number.isdigit())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 127,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "19317"
+      ]
+     },
+     "execution_count": 127,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(set(text1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 128,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "17231"
+      ]
+     },
+     "execution_count": 128,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(set(word.lower() for word in text1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 129,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "16948"
+      ]
+     },
+     "execution_count": 129,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(set(word.lower() for word in text1 if word.isalpha()))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 130,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Andres-NLTK.ipynb\tUMA_Fraser_Radio_Talks.zip\r\n",
+      "UMA_Fraser_Radio_Talks\tnltk_data\r\n"
+     ]
+    }
+   ],
+   "source": [
+    "!ls\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 131,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "!cd UMA_Fraser_Radio_Talks/\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 132,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Andres-NLTK.ipynb\tUMA_Fraser_Radio_Talks.zip\r\n",
+      "UMA_Fraser_Radio_Talks\tnltk_data\r\n"
+     ]
+    }
+   ],
+   "source": [
+    "!ls\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 2",
+   "language": "python",
+   "name": "python2"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}
